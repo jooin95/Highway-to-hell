@@ -1,0 +1,31 @@
+ <!--<!DOCTYPE html> 5번째 html만들기-->
+{% extends 'third/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+    {% for item in restaurants %}
+        <div class="row restaurant-item" style="margin: 20px auto">
+            <div class="col-sm-12">
+                <div class="card border=secondary">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ item.address }}</h6>
+                        <p class="card-text">고속 도로 정보</p>
+                        <a href="{% url 'restaurant-detail' id=item.id %}" class="card-link">자세히 보기</a>
+                        <a href="{% url 'restaurant-update' %}?id={{ item.id }}" class="card-link">수정하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="row">
+           <div class="col-sm-12 text-center">
+               <div class="pagination">
+                   
+               </div>
+           </div>
+        </div>
+    </div>
+ {% endblock %}
+</body>
+</html>
