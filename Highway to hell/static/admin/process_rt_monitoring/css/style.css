@@ -1,0 +1,124 @@
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.panel {
+    height: 300px;
+    /*margin: 10px;*/
+}
+.panel-body {
+    padding: 5px;
+    /*margin: 10px;*/
+}
+
+.checkbox {
+    margin: 0;
+    padding: 0;
+}
+.checkbox-row {
+    margin: 0 6px 6px 0;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+/*graph*/
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    width: 150px;
+    height: 56px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    /*  pointer-events: none;    This line needs to be removed */
+
+}
+
+
+
+/*custom label size*/
+.label-12{
+    vertical-align: super;
+    font-size: 12px;
+}
+.label-xsmall {
+    vertical-align: super;
+    font-size: x-small;
+}
+
+.label-small {
+    vertical-align: super;
+    font-size: small;
+}
+
+.label-medium {
+    vertical-align: super;
+    font-size: medium;
+}
+
+.label-large {
+    vertical-align: super;
+    font-size: large;
+}
+
+.label-bs {
+    vertical-align: super;
+}
+
+
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background: #ECF0F5;
+    z-index: 10000000000;
+    margin: 0 -10px 10px;
+
+}
+
+body {
+    overflow-x: unset;
+    overflow-y: unset;
+}
+
+.wrapper {
+    overflow: unset;
+}

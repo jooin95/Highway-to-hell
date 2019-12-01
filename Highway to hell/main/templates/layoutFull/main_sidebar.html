@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<div class="user-panel">
+  <div class="pull-left info" style="position: initial;">
+    <p style="font-size: 14px">Highway_to_hell</p>
+  </div>
+</div>
+
+
+
+<ul class="sidebar-menu tree" data-widget="tree">
+  <li class="header">MAIN NAVIGATION</li>
+
+
+  <li class="treeview">
+    <a href="{% url 'vis_test3' %}">
+      <i class="fa fa-table"></i>
+      <span> 고속도로 </span>
+      <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+    </a>
+    <ul class="treeview-menu">
+      <li> <a href="{% url 'vis_af_dev' %}"><i class="fa fa-circle-o"></i> <span>종합 정보</span></a>
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,38 @@
+
+.circle{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    border-top: 8px solid grey;
+    border-bottom:  8px solid grey;
+    border-left:  8px solid grey;
+    border-right: 8px solid transparent;
+    border-radius: 50%;
+    -webkit-animation:loading 2s linear infinite;
+    -moz-animation:loading 2s linear infinite;
+    animation:loading 2s linear infinite;
+}
+
+@-moz-keyframes loading {
+    100%
+    {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loading {
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes loading {
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
