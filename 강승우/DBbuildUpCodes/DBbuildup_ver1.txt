@@ -1,0 +1,190 @@
+CREATE DATABASE `highwaytohell` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+CREATE TABLE `highways` (
+  `ID` varchar(45) NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `num` int(11) DEFAULT NULL,
+  `h1` varchar(100) DEFAULT NULL,
+  `h2` varchar(100) DEFAULT NULL,
+  `h3` varchar(100) DEFAULT NULL,
+  `h4` varchar(100) DEFAULT NULL,
+  `h5` varchar(100) DEFAULT NULL,
+  `h6` varchar(100) DEFAULT NULL,
+  `h7` varchar(100) DEFAULT NULL,
+  `h8` varchar(100) DEFAULT NULL,
+  `h9` varchar(100) DEFAULT NULL,
+  `h10` varchar(100) DEFAULT NULL,
+  `h11` varchar(100) DEFAULT NULL,
+  `h12` varchar(100) DEFAULT NULL,
+  `h13` varchar(100) DEFAULT NULL,
+  `h14` varchar(100) DEFAULT NULL,
+  `h15` varchar(100) DEFAULT NULL,
+  `h16` varchar(100) DEFAULT NULL,
+  `h17` varchar(100) DEFAULT NULL,
+  `h18` varchar(100) DEFAULT NULL,
+  `h19` varchar(100) DEFAULT NULL,
+  `h20` varchar(100) DEFAULT NULL,
+  `h21` varchar(100) DEFAULT NULL,
+  `h22` varchar(100) DEFAULT NULL,
+  `h23` varchar(100) DEFAULT NULL,
+  `h24` varchar(100) DEFAULT NULL,
+  `h25` varchar(100) DEFAULT NULL,
+  `h26` varchar(100) DEFAULT NULL,
+  `h27` varchar(100) DEFAULT NULL,
+  `h28` varchar(100) DEFAULT NULL,
+  `h29` varchar(100) DEFAULT NULL,
+  `h30` varchar(100) DEFAULT NULL,
+  `h31` varchar(100) DEFAULT NULL,
+  `h32` varchar(100) DEFAULT NULL,
+  `h33` varchar(100) DEFAULT NULL,
+  `h34` varchar(100) DEFAULT NULL,
+  `h35` varchar(100) DEFAULT NULL,
+  `h36` varchar(100) DEFAULT NULL,
+  `h37` varchar(100) DEFAULT NULL,
+  `h38` varchar(100) DEFAULT NULL,
+  `h39` varchar(100) DEFAULT NULL,
+  `h40` varchar(100) DEFAULT NULL,
+  `h41` varchar(100) DEFAULT NULL,
+  `h42` varchar(100) DEFAULT NULL,
+  `h43` varchar(100) DEFAULT NULL,
+  `h44` varchar(100) DEFAULT NULL,
+  `h45` varchar(100) DEFAULT NULL,
+  `h46` varchar(100) DEFAULT NULL,
+  `h47` varchar(100) DEFAULT NULL,
+  `h48` varchar(100) DEFAULT NULL,
+  `h49` varchar(100) DEFAULT NULL,
+  `h50` varchar(100) DEFAULT NULL,
+  `h51` varchar(100) DEFAULT NULL,
+  `h52` varchar(100) DEFAULT NULL,
+  `h53` varchar(100) DEFAULT NULL,
+  `h54` varchar(100) DEFAULT NULL,
+  `h55` varchar(100) DEFAULT NULL,
+  `h56` varchar(100) DEFAULT NULL,
+  `h57` varchar(100) DEFAULT NULL,
+  `h58` varchar(100) DEFAULT NULL,
+  `h59` varchar(100) DEFAULT NULL,
+  `h60` varchar(100) DEFAULT NULL,
+  `h61` varchar(100) DEFAULT NULL,
+  `h62` varchar(100) DEFAULT NULL,
+  `h63` varchar(100) DEFAULT NULL,
+  `h64` varchar(100) DEFAULT NULL,
+  `h65` varchar(100) DEFAULT NULL,
+  `h66` varchar(100) DEFAULT NULL,
+  `h67` varchar(100) DEFAULT NULL,
+  `h68` varchar(100) DEFAULT NULL,
+  `h69` varchar(100) DEFAULT NULL,
+  `h70` varchar(100) DEFAULT NULL,
+  `h71` varchar(100) DEFAULT NULL,
+  `h72` varchar(100) DEFAULT NULL,
+  `h73` varchar(100) DEFAULT NULL,
+  `h74` varchar(100) DEFAULT NULL,
+  `h75` varchar(100) DEFAULT NULL,
+  `h76` varchar(100) DEFAULT NULL,
+  `h77` varchar(100) DEFAULT NULL,
+  `h78` varchar(100) DEFAULT NULL,
+  `h79` varchar(100) DEFAULT NULL,
+  `h80` varchar(100) DEFAULT NULL,
+  `h81` varchar(100) DEFAULT NULL,
+  `h82` varchar(100) DEFAULT NULL,
+  `h83` varchar(100) DEFAULT NULL,
+  `h84` varchar(100) DEFAULT NULL,
+  `h85` varchar(100) DEFAULT NULL,
+  `h86` varchar(100) DEFAULT NULL,
+  `h87` varchar(100) DEFAULT NULL,
+  `h88` varchar(100) DEFAULT NULL,
+  `h89` varchar(100) DEFAULT NULL,
+  `h90` varchar(100) DEFAULT NULL,
+  `h91` varchar(100) DEFAULT NULL,
+  `h92` varchar(100) DEFAULT NULL,
+  `h93` varchar(100) DEFAULT NULL,
+  `h94` varchar(100) DEFAULT NULL,
+  `h95` varchar(100) DEFAULT NULL,
+  `h96` varchar(100) DEFAULT NULL,
+  `h97` varchar(100) DEFAULT NULL,
+  `h98` varchar(100) DEFAULT NULL,
+  `h99` varchar(100) DEFAULT NULL,
+  `h100` varchar(100) DEFAULT NULL,
+  `h101` varchar(100) DEFAULT NULL,
+  `h102` varchar(100) DEFAULT NULL,
+  `h103` varchar(100) DEFAULT NULL,
+  `h104` varchar(100) DEFAULT NULL,
+  `h105` varchar(100) DEFAULT NULL,
+  `h106` varchar(100) DEFAULT NULL,
+  `h107` varchar(100) DEFAULT NULL,
+  `h108` varchar(100) DEFAULT NULL,
+  `h109` varchar(100) DEFAULT NULL,
+  `h110` varchar(100) DEFAULT NULL,
+  `h111` varchar(100) DEFAULT NULL,
+  `h112` varchar(100) DEFAULT NULL,
+  `h113` varchar(100) DEFAULT NULL,
+  `h114` varchar(100) DEFAULT NULL,
+  `h115` varchar(100) DEFAULT NULL,
+  `h116` varchar(100) DEFAULT NULL,
+  `h117` varchar(100) DEFAULT NULL,
+  `h118` varchar(100) DEFAULT NULL,
+  `h119` varchar(100) DEFAULT NULL,
+  `h120` varchar(100) DEFAULT NULL,
+  `h121` varchar(100) DEFAULT NULL,
+  `h122` varchar(100) DEFAULT NULL,
+  `h123` varchar(100) DEFAULT NULL,
+  `h124` varchar(100) DEFAULT NULL,
+  `h125` varchar(100) DEFAULT NULL,
+  `h126` varchar(100) DEFAULT NULL,
+  `h127` varchar(100) DEFAULT NULL,
+  `h128` varchar(100) DEFAULT NULL,
+  `h129` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39,h40,h41,h42,h43,h44,h45,h46,h47,h48,h49,h50,h51,h52,h53,h54,h55,h56,h57,h58,h59,h60,h61,h62,h63,h64,h65,h66,h67,h68,h69,h70,h71,h72,h73,h74,h75,h76,h77,h78,h79,h80,h81,h82,h83,h84,h85,h86,h87,h88,h89,h90,h91,h92,h93,h94,h95,h96,h97,h98,h99,h100,h101,h102,h103,h104,h105,h106,h107,h108,h109,h110,h111,h112,h113,h114,h115,h116,h117,h118,h119,h120,h121,h122,h123,h124,h125,h126,h127) values('way1','경부고속도로',128,'한남IC','잠원IC','한남IC','잠원IC','반포IC','서초IC','양재IC','만남의광장교차로','상적교','대왕판교IC','판교JC','판교IC','낙생대공원','판교3교','하이패스센터','서울톨게이트','NAVER','금곡육교','금곡교','죽전휴게소(서울방향)','신갈JC','수원IC','기흥IC','기흥동탄IC','동탄JC','승리교','오산IC','진위천교','안성휴게소(서울방향)','안성JC','안성휴게소(부산방향)','안성IC','안성천교','입장휴게소(서울방향)','북천안IC','망향휴게소(부산방향)','천안IC','천안삼거리휴게소(서울방향)','천안JC','목천IC','신사교','천안휴게소(부산방향)','병천1교','청주휴게소(서울방향)','국사교','옥산휴게소(부산방향)','청주IC','남이JC','청주JC','남청주IC','죽암휴게소(부산방향)','매봉철육교','신탄진IC','신탄진휴게소(서울방향)','회덕JC','대전IC','비룡JC','증약터널','옥천IC','옥천휴게소(부산방향)','금강2교','금강휴게소(부산방향)','영동1터널','영동터널','금곡2교','영동IC','황간휴게소(부산방향)','노근2교','황간IC','계룡1교','추풍령휴게소(부산방향)','추풍령대교','덕천교','김천IC','감천교','김천휴게소(부산방향)','동김천IC','대신1교','대신3교','김천JC','부곡3교','도원교','구미IC','남구미IC','석적육교','칠곡휴게소(부산방향)','왜관IC','칠곡물류IC','대평육교','오산교','금호JC','울산교','검단1교','도동JC','동대구JC','대림육교','경산IC','경산휴게소(서울방향)','평사휴게소(부산방향)','호남육교','영천IC','반정교','임포교','경주터널','건천IC','건천휴게소(부산방향)','광명교','경주IC','인천교','경주휴게소(부산방향)','활천IC','미호육교','천전2교','언양휴게소(서울방향)','언양JC','서울산IC','가천교','통도사IC','통도사휴게소(부산방향)','이상육교','석계4교','양산IC','양산JC','양산휴게소(서울방향)','노포IC','부산톨게이트','구서IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10) values('way2','경인고속도로',11,'양천우체국삼거리','홍익병원앞','양천우체국삼거리','홍익병원앞','화곡지하차도','신월IC','부천IC','서운JC','인천톨게이트','부평IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14) values('way3','고창담양고속도로',15,'고창JC','남고창IC','고창JC','남고창IC','고창터널','문수산터널','장성물류IC','장성JC','장성3터널','장성4터널','북광주IC','태령교','담양JC','장산2교');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39,h40) values('way4','광주대구고속도로',41,'옥포JC','논공휴게소(무안방향)','옥포JC','논공휴게소(무안방향)','고령JC','동고령IC','회천대교','고령IC','해인사IC','야로2터널','가야1터널','가조터널','거창휴게소(고서방향)','가조IC','살피재터널','황강천교','거창IC','직물육교','수동터널','함양JC','죽산임시휴게소(고서방향)','함양IC','병곡2터널','백전1터널','갈계리','지리산IC','지리산휴게소(고서방향)','동남원IC','요천교','남원IC','옥률천교','남원JC','남원터널','섬진강교','외이육교','순창IC','방축육교','담양1터널','담양IC','담양JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10) values('way5','광주원주고속도로',11,'초월IC','동곤지암IC','초월IC','동곤지암IC','흥천이포IC','대신IC','동여주IC','동양평IC','서원주IC','신평JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39,h40,h41,h42,h43,h44,h45,h46,h47,h48,h49,h50,h51,h52) values('way6','남해고속도로(순천-부산)',53,'구포IC','덕천IC교차로','구포IC','덕천IC교차로','덕천IC','대저JC','북부산톨게이트','불암교','김해JC','동김해IC','해반천교','서김해IC','냉정JC','진례JC','진례IC','진영휴게소(순천방향)','동창원IC','창원JC','북창원IC','창원1터널','칠원JC','산인JC','송정육교','함안IC','장지IC','군북IC','수곡교','지수IC','진성IC','진주터널','문산IC','문산휴게소(순천방향)','진주IC','진주JC','사천IC','탑리교','축동IC','사천휴게소(순천방향)','곤양IC','진교IC','성평교','하동IC','섬진강휴게소(순천방향)','진월IC','옥곡IC','대죽교','동광양IC','광양IC','광양IC','석사교','순천JC','순천IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30) values('way7','남해고속도로(영암-순천)',31,'순천만IC','남순천톨게이트','순천만IC','남순천톨게이트','별량2터널','호동터널','벌교졸음쉼터(순천방향)','고흥IC','벌교3터널','벌교IC','조성2터널','초암산터널','보성녹차휴게소(광양방향)','보성IC','노동1터널','보성터널','장동3터널','장동1터널','부산1터널','장흥IC','장흥1터널','강진4터널','강진2터널','강진1터널','강진무위사IC','월평1교','영암휴게소(목포방향)','상월2교','영암3터널','영암2터널');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7) values('way8','남해제1고속도로지선',8,'창원JC','마산톨게이트','창원JC','마산톨게이트','동마산IC','서마산IC','내서JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22) values('way9','논산천안고속도로',23,'천안JC','남천안IC','천안JC','남천안IC','풍세톨게이트','남풍세IC','차령터널','정안IC','정안휴게소(순천방향)','정우터널','북공주JC','공주JC','공주JC','웅진대교','남공주IC','용성천2교','이인휴게소(천안방향)','탄천휴게소(순천방향)','탄천IC','서논산IC','연무IC','남논산톨게이트');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27) values('way10','당진영덕고속도로(대전-당진)',28,'유성JC','유성교','유성JC','유성교','남세종IC','용수천교','금강교','대교천교','서세종IC','공주휴게소(당진방향)','공주IC','공주JC','서공주JC','마곡사IC','신풍휴게소(청원방향)','유구IC','신영터널','차동터널','신양IC','예산휴게소(당진방향)','예산대교','예산수덕사IC','분천1교','용리1교','고덕IC','면천휴게소(당진방향)','면천IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10) values('way11','당진영덕고속도로(상주-영덕)',11,'영덕IC','동청송.영양IC','영덕IC','동청송.영양IC','청송IC','동안동IC','북의성IC','안동JC','서의성IC','동상주IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21) values('way12','당진영덕고속도로(청주-상주)',22,'낙동JC','상주휴게소(청주방향)','낙동JC','상주휴게소(청주방향)','남상주IC','내서3터널','내서1터널','화서2터널','화서IC','화서휴게소(상주방향)','속리산휴게소(청주방향)','속리산IC','탄부터널','보은IC','수한터널','수리티터널','회인IC','피반령터널','문의1터널','문의IC','문의휴게소(청원방향)');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6) values('way13','대전남부순환고속도로',7,'산내JC','구완터널','산내JC','구완터널','안영IC','서대전IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14) values('way14','동해고속도로(부산-울산)',15,'울산JC','영해1교','울산JC','영해1교','문수IC','청량IC','온양터널','온양IC','장안휴게소(부산방향)','장안천교','장안IC','기장IC','기장1터널','해운대IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31) values('way15','동해고속도로(삼척-속초)',32,'속초IC','청대터널','속초IC','청대터널','북양양IC','양양1터널','양양IC','월리교','상양혈교','하조대IC','현북터널','현남터널','양양휴게소(속초방향)','남양양IC','장덕교','북강릉IC','노동2교','강릉JC','강릉IC','구정휴게소(동해방향)','남강릉IC','강릉5터널','강릉3터널','강릉1터널','옥계IC','옥계휴게소(속초방향)','동해휴게소(동해방향)','망상IC','발한1교','동해IC','삼척IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10) values('way16','동해고속도로(울산-포항)',11,'남포항IC','남포항톨게이트','남포항IC','남포항톨게이트','양북주차장휴게소','동경주IC','남경주IC','외동휴게소','범서IC','다운4터널');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13) values('way17','무안광주고속도로',14,'운수IC','동광산톨게이트','운수IC','동광산톨게이트','서광산IC','나주IC','노안터널','문평4터널','문평IC','동함평IC','함평나비휴게소(무안방향)','함평JC','북무안IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10) values('way18','부산외곽순환고속도로',11,'기장IC','기장철마IC','기장IC','기장철마IC','금정IC','노포분기점','김해가야하이패스IC','대감분기점','광재IC','진영IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12) values('way19','상주영천고속도로',13,'상주JC','낙동강의성휴게소','상주JC','낙동강의성휴게소','도개IC','서군위IC','군위JC','동군위IC','신녕IC','화산JC','동영천IC','북안IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29) values('way20','서울양양고속도로',30,'강일IC','선동교차로','강일IC','선동교차로','미사IC','덕소삼패IC','남양주톨게이트','월문3터널','화도IC','서종IC','노문1교','이천2교','천안교','설악IC','가평휴게소(춘천방향)','미사터널','마곡터널','강촌IC','추곡터널','행촌터널','남춘천IC','동산톨게이트','춘천JC','동산2터널','화촌1터널','동홍천IC','내촌IC','인제IC','서양양IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39,h40,h41,h42,h43,h44,h45,h46,h47,h48,h49,h50,h51) values('way21','서울외곽순환고속도로',52,'송추IC','노고산1터널','송추IC','노고산1터널','양주톨게이트','통일로IC','원당천교','고양IC','일산IC','자유로JC','김포IC','김포톨게이트','노오지JC','계양IC','서운JC','중동IC','송내IC','장수IC','소래터널','시흥IC','시흥톨게이트','안현JC','도리JC','조남JC','산본IC','안양터널','평촌IC','학의JC','청계톨게이트','청계터널','판교JC','성남IC','성남톨게이트','송파IC','서하남IC','서하남휴게소(판교방향)','하남JC','상일IC','강일IC','토평IC','구리남양주톨게이트','남양주IC','구리IC','구리휴게소(퇴계원방향)','퇴계원IC','불암산톨게이트','별내IC','수락산터널','의정부IC','호원3교','사패산터널');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16) values('way22','서천공주고속도로',17,'서공주JC','서공주IC','서공주JC','서공주IC','용봉1교','청양임시휴게소(서천방향)','청양IC','은곡천교','부여IC','부여백제휴게소(서천방향)','서부여IC','금천2교','팔지교','봉선1교','서천터널','동서천JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39,h40,h41,h42,h43,h44,h45,h46,h47,h48,h49,h50,h51,h52,h53,h54,h55,h56,h57,h58,h59,h60,h61,h62,h63,h64,h65,h66,h67,h68,h69,h70,h71,h72,h73,h74,h75,h76,h77,h78,h79,h80,h81,h82,h83,h84,h85,h86,h87,h88,h89,h90,h91,h92) values('way23','서해안고속도로',93,'금천IC','금천고가교','금천IC','금천고가교','일직JC','광명역IC','목감IC','조남JC','서서울톨게이트','안산JC','팔곡JC','매송IC','비봉IC','양노3교','하저4교','화성휴게소(목포방향)','발안IC','상신2교','서평택JC','홍원1교','서평택IC','서해대교','행담IC','송악IC','칠동교','당진IC','순성교','당진JC','대방들천교','서산IC','운산터널','서산휴게소(목포방향)','해미IC','해미천교','장요교','갈산천교','홍성IC','홍성휴게소(목포방향)','대판교','광천IC','천수만교','마강교','대천휴게소(목포방향)','대천IC','남포교','양기교','무창포IC','웅천터널','춘장대IC','서천휴게소(목포방향)','종천터널','서천IC','기산교','동서천JC','금강대교','군산IC','군산휴게소(목포방향)','동군산IC','서해만경강교','황상1교','서김제IC','복죽1교','서포교','부안동진강교','부안IC','부안주차장(목포방향)','부곡교','줄포IC','신덕육교','주항육교','선운산IC','고인돌휴게소(목포방향)','고창IC','고창JC','덕림천교','대산천교','춘산육교','영광IC','영광1터널','영광2터널','불갑천교','함평천1교','함평터널','함평IC','함평천지휴게소(목포방향)','함평JC','무안IC','무안4터널','몽탄2터널','양장교','목포톨게이트','일로IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13) values('way24','세종포천고속도로(구리-포천)',14,'신북IC','신북TG','신북IC','신북TG','포천IC','선단IC','소흘JC','소흘IC','민락IC','동의정부IC','남별내IC','중랑IC','갈매동구릉TG');
+insert into highways(id,name,num,h1,h2,h3,h4) values('way25','세종포천고속도로(양주-소흘)',5,'양주IC','옥정IC','양주IC','옥정IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8) values('way26','수도권제2순환고속도로(봉담-동탄)',9,'동탄JC','북오산IC','동탄JC','북오산IC','오산휴게소(과천방향)','서오산JC','정남IC','봉담톨게이트');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8) values('way27','수도권제2순환고속도로(인천-김포)',9,'서김포.통진IC','대곶IC','서김포.통진IC','대곶IC','검단.양촌IC','북청라IC','남청라JC','인천터널');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32) values('way28','순천완주고속도로',33,'완주JC','동전주IC','완주JC','동전주IC','완산터널','신리2터널','상관IC','용암3터널','관촌임시휴게소(순천방향)','관촌1터널','임실IC','월평교','오수2터널','오수IC','오수휴게소(광양방향)','오수1터널','사매1터널','북남원IC','남원JC','서남원IC','춘향휴게소(광양방향)','천마터널','용방2터널','구례화엄사IC','구례2터널','구례1터널','황전IC','황전터널','서면5터널','서면2터널','서면1터널','순천JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5) values('way29','아산청주고속도로(옥산-오창)',6,'옥산분기점','서오창IC','옥산분기점','서오창IC','신수교');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39,h40,h41,h42,h43,h44,h45,h46,h47,h48,h49,h50,h51,h52,h53,h54,h55,h56,h57,h58,h59,h60,h61,h62) values('way30','영동고속도로',63,'강릉JC','강릉휴게소(인천방향)','강릉JC','강릉휴게소(인천방향)','성산2교','대관령5터널','대관령1터널','대관령IC','월정3교','오대천교','진부IC','진부1터널','속사IC','평창휴게소(인천방향)','평창IC','면온IC','둔내터널','자포곡교','둔내IC','횡성휴게소(인천방향)','횡성대교','대미원천교','새말IC','평장1교','장양1교','원주IC','원주천교','만종JC','문막휴게소(강릉방향)','문막IC','문막휴게소(인천방향)','둔번교','강천터널','남한강교','여주IC','여주JC','여주휴게소(인천방향)','상활교','이천IC','호법JC','덕평자연휴게소(인천방향)','덕평IC','내사교','양지IC','용인휴게소(인천방향)','용인IC','마성터널','마성IC','신갈JC','동수원IC','북수원IC','부곡IC','동군포IC','군포IC','군포IC','둔대JC','안산JC','안산IC','서안산IC','군자톨게이트','군자JC','월곶JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11) values('way31','용인서울고속도로',12,'헌릉IC','심곡터널','헌릉IC','심곡터널','고등IC','금토톨게이트','서판교IC','하산운터널','서분당IC','서수지IC','광교상현IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7) values('way32','울산고속도로',8,'울산IC','울산톨게이트','울산IC','울산톨게이트','울산JC','사연대교','언양JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16) values('way33','익산포항고속도로(대구-포항)',17,'포항IC','포항톨게이트','포항IC','포항톨게이트','달전터널','서포항IC','임고4터널','임고3터널','임고1터널','북영천IC','화산JC','청통와촌IC','와촌휴게소(포항방향)','와촌터널','도평터널','도동JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14) values('way34','익산포항고속도로(익산-장수)',15,'익산JC','고산천교','익산JC','고산천교','완주IC','완주JC','소양IC','상관1터널','곰티터널','부귀2터널','진안1터널','진안IC','방곡터널','장수IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13) values('way35','인천국제공항고속도로',14,'북로JC','88JC','북로JC','88JC','김포공항IC','노오지JC','목상교','신공항톨게이트','북인천IC','영종대교','금산IC','공항입구IC','공항신도시JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5) values('way36','제2경인고속도로(송도-연수)',6,'송도IC','연수JC','송도IC','연수JC','송도IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6) values('way37','제2경인고속도로(안양-성남)',7,'삼막IC','북의왕IC','삼막IC','북의왕IC','북청계IC','동판교IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8) values('way38','제2경인고속도로(인천대교)',9,'학익JC','옥련IC','학익JC','옥련IC','연수JC','인천대교','인천대교톨게이트','영종IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13) values('way39','제2경인고속도로',14,'삼막IC','석수IC','삼막IC','석수IC','일직JC','광명IC','안현JC','신천IC','남인천톨게이트','서창JC','남동IC','문학IC','학익JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8) values('way40','제2중부고속도로',9,'산곡JC','광지원터널','산곡JC','광지원터널','하번천터널','초월1교','노곡천1교','이천휴게소(하남방향)');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33) values('way41','중부고속도로',34,'하남JC','하남만남의광장','하남JC','하남만남의광장','하남IC','동서울톨게이트','산곡JC','중부1터널','광주IC','중부2터널','중부3터널','초월1교','곤지암IC','이천휴게소(하남방향)','서이천IC','이천휴게소(통영방향)','마장JC','호법JC','송도교','모가졸음쉼터(통영방향)','미륵댕이입구','일죽IC','화동육교','음성휴게소(통영방향)','대소IC','대소JC','진천IC','백곡천교','진천터널','증평IC','오창휴게소(통영방향)','오창IC','서청주IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39,h40,h41,h42,h43,h44,h45,h46,h47,h48,h49,h50,h51,h52,h53,h54,h55,h56,h57,h58,h59,h60,h61,h62,h63,h64,h65,h66,h67,h68,h69,h70,h71,h72,h73,h74,h75) values('way42','중부내륙고속도로',76,'양평IC','송학교','양평IC','송학교','강상2터널','금사5터널','금사1터널','북여주IC','귀백2교','서여주IC','서여주휴게소(마산방향)','남여주IC','여주JC','금당교','청미천교','감곡IC','지당교','가신1교','충주JC','북충주IC','노은JC','충주휴게소(마산방향)','충주IC','두정터널','매현2터널','조곡터널','괴산IC','괴산휴게소(마산방향)','장연터널','연풍IC','문경새재터널','문경대교','문경2터널','문경새재IC','불정터널','문경휴게소(마산방향)','점촌함창IC','흑암1교','북상주IC','목가2교','병성천교','상주IC','낙동터널','낙동JC','상주터널','선산휴게소(마산방향)','선산IC','선산감천교','김천JC','김천3터널','김천1터널','남김천IC','성주휴게소(창원방향)','자양교','성주IC','남성주참외휴게소(창원방향)','남성주IC','고령4터널','상용1교','고령JC','고령3터널','고령2터널','고령1터널','현풍JC','예현1교','모전육교','창녕IC','퇴천교','계성천교','영산IC','영산휴게소(마산방향)','남지IC','칠서휴게소(양평방향)','칠서IC','칠원JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23) values('way43','중앙고속도로(부산-대구)',24,'동대구JC','동대구IC','동대구JC','동대구IC','수성IC','옥곡1교','삼성2교','남천교','청도2교','청도IC','청도천4교','청도새마을휴게소(부산방향)','고정3터널','고정1터널','밀양IC','가곡터널','남밀양IC','밀양강교','삼랑진IC','생림1터널','용산교','감로2교','상동IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5) values('way44','중앙고속도로(삼락-대동)',6,'대동JC','대동톨게이트','대동JC','대동톨게이트','초정IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39,h40,h41,h42,h43,h44,h45,h46,h47,h48,h49,h50,h51,h52,h53,h54,h55,h56,h57,h58,h59,h60,h61,h62,h63,h64,h65,h66) values('way45','중앙고속도로(춘천-금호)',67,'춘천IC','춘천휴게소(부산방향)','춘천IC','춘천휴게소(부산방향)','원무2터널','춘천JC','홍천강휴게소(춘천방향)','홍천IC','남산터널','삼마치터널','어둔교','청곡교','금계천1교','횡성IC','갈풍1교','원주휴게소(부산방향)','북원주IC','무장1교','만종JC','남원주IC','관설2교','치악4터널','치악휴게소(부산방향)','신림IC','명암3교','명도1교','제천IC','제천휴게소(부산방향)','남제천IC','제천터널','대가3교','북단양IC','단양휴게소(부산방향)','단양휴게소(춘천방향)','단양IC','죽령졸음쉼터(부산방향)','죽령교','두산2교','풍기IC','영주휴게소(부산방향)','영주IC','소룡1교','내성천교','예천IC','보문터널','만운1교','서안동IC','안동휴게소(부산방향)','고상리','남안동IC','평팔4교','창길2교','마전교','대사1교','의성IC','군위휴게소(부산방향)','위천교','군위IC','군위터널','가산IC','다부2교','다부IC','동명휴게소(부산방향)','읍내터널','칠곡IC','금호터널');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39,h40,h41,h42,h43,h44,h45,h46,h47,h48,h49,h50,h51,h52,h53,h54,h55,h56,h57,h58,h59,h60,h61,h62,h63,h64,h65,h66) values('way46','통영대전고속도로',67,'남이JC','청주JC','남이JC','청주JC','남청주IC','죽암휴게소(부산방향)','매봉철육교','신탄진IC','신탄진휴게소(서울방향)','회덕JC','대전IC','비룡JC','판암IC','산내JC','남대전IC','마달터널','추부IC','인삼랜드휴게소(통영방향)','금산IC','양곡교','현내3교','가당2교','용포1교','무주IC','사내교','삼가2교','구량천교','덕유산IC','덕유산휴게소(통영방향)','매계1교','장수JC','육십령터널','금당2교','서상IC','서하교','다곡4교','지곡IC','함양휴게소(통영방향)','함양JC','남강천2교','생초IC','특리2교','산청IC','경호강4교','산청1터널','산청휴게소(통영방향)','단성IC','오미교','서재3교','가화2교','서진주IC','독산교','진주JC','소곡2교','사천2터널','연화산IC','고성1터널','공룡나라휴게소(하남방향)','고성3터널','금산육교','고성IC','동고성IC','통영2터널','대촌교','북통영IC','통영IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17) values('way47','평택시흥고속도로',18,'군자JC','서시흥톨게이트','군자JC','서시흥톨게이트','남안산IC','시화대교','공룡알화석지방문센터','송산포도휴게소(평택방향)','송산마도IC','석교교','신남교','마도교','남양교','조암IC','장안톨게이트','독정1육교','정든교');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27) values('way48','평택제천고속도로',28,'제천JC','천등산휴게소(평택방향)','제천JC','천등산휴게소(평택방향)','동충주IC','남한강대교','동막터널','노은JC','노은2터널','충주JC','서충주IC','음성IC','금왕휴게소(평택방면)','금왕꽃동네IC','대소JC','북진천IC','안진터널','금광2터널','안성맞춤휴게소(평택방향)','남안성IC','갈전안성천교','서안성IC','안성JC','송탄IC','평택터널','평택JC','청북IC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15) values('way49','평택파주고속도로(수원-광명)',16,'봉담IC','호매실IC','봉담IC','호매실IC','금곡지하차도','금곡IC','동안산.당수IC','구봉산터널','남군포IC','수리산1터널','수리산2터널','동시흥IC','남광명JC','남광명톨게이트','성채터널');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10) values('way50','평택파주고속도로(평택-화성)',11,'안녕IC','서오산톨게이트','안녕IC','서오산톨게이트','서오산JC','향남IC','천천교','북평택톨게이트','어연IC','평택JC');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17,h18,h19,h20,h21,h22,h23,h24,h25,h26,h27,h28,h29,h30,h31,h32,h33,h34,h35,h36,h37,h38,h39,h40,h41,h42,h43,h44,h45,h46,h47,h48,h49,h50,h51,h52,h53) values('way51','호남고속도로',54,'논산JC','여산휴게소(순천방향)','논산JC','여산휴게소(순천방향)','익산IC','익산JC','삼례IC','전주IC','서전주IC','이서휴게소(순천방향)','김제IC','금산사IC','용호천교','태인IC','정우육교','정읍녹두장군휴게소(순천방향)','정읍IC','천원천교','내장산IC','호남터널','백양사IC','백양사휴게소(순천방향)','황룡강교','장성JC','장성IC','광주톨게이트','광산IC','산월IC','동림IC','서광주IC','용봉IC','동광주IC','문흥JC','동광주톨게이트','고서JC','창평IC','대덕JC','대덕터널','옥과IC','곡성기차마을휴게소(순천방향)','칠봉교','곡성IC','근촌육교','명강교','석곡IC','보성강교','주암휴게소(순천방향)','주암IC','행정교','신전2교','승주IC','순천2터널','순천휴게소(순천방향)');
+insert into highways(id,name,num,h1,h2,h3,h4,h5,h6,h7,h8,h9,h10,h11,h12,h13,h14,h15,h16,h17) values('way52','호남고속도로지선',18,'회덕JC','북대전IC','회덕JC','북대전IC','북대전졸음쉼터(논산방향)','유성JC','유성IC','학하2교','서대전졸음쉼터(논산방향)','서대전JC','두개천교','계룡IC','벌곡휴게소(논산방향)','벌곡휴게소(대전방향)','논산천교','강천교','논산IC');
