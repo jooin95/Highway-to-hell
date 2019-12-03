@@ -256,7 +256,7 @@ CREATE TABLE way1 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way2 (
   date date NOT NULL,
   time time NOT NULL,
@@ -281,7 +281,7 @@ CREATE TABLE way2 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way3 (
   date date NOT NULL,
   time time NOT NULL,
@@ -314,7 +314,7 @@ CREATE TABLE way3 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way4 (
   date date NOT NULL,
   time time NOT NULL,
@@ -399,7 +399,7 @@ CREATE TABLE way4 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way5 (
   date date NOT NULL,
   time time NOT NULL,
@@ -424,7 +424,7 @@ CREATE TABLE way5 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way6 (
   date date NOT NULL,
   time time NOT NULL,
@@ -533,7 +533,7 @@ CREATE TABLE way6 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way7 (
   date date NOT NULL,
   time time NOT NULL,
@@ -598,7 +598,7 @@ CREATE TABLE way7 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way8 (
   date date NOT NULL,
   time time NOT NULL,
@@ -617,7 +617,7 @@ CREATE TABLE way8 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way9 (
   date date NOT NULL,
   time time NOT NULL,
@@ -666,7 +666,7 @@ CREATE TABLE way9 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way10 (
   date date NOT NULL,
   time time NOT NULL,
@@ -725,7 +725,7 @@ CREATE TABLE way10 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way11 (
   date date NOT NULL,
   time time NOT NULL,
@@ -750,7 +750,7 @@ CREATE TABLE way11 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way12 (
   date date NOT NULL,
   time time NOT NULL,
@@ -797,7 +797,7 @@ CREATE TABLE way12 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way13 (
   date date NOT NULL,
   time time NOT NULL,
@@ -814,7 +814,7 @@ CREATE TABLE way13 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 CREATE TABLE way14 (
   date date NOT NULL,
   time time NOT NULL,
@@ -847,7 +847,7 @@ CREATE TABLE way14 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way15 (
   date date NOT NULL,
   time time NOT NULL,
@@ -914,7 +914,7 @@ CREATE TABLE way15 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way16 (
   date date NOT NULL,
   time time NOT NULL,
@@ -939,7 +939,7 @@ CREATE TABLE way16 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way17 (
   date date NOT NULL,
   time time NOT NULL,
@@ -970,7 +970,7 @@ CREATE TABLE way17 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way18 (
   date date NOT NULL,
   time time NOT NULL,
@@ -995,7 +995,7 @@ CREATE TABLE way18 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way19 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1024,7 +1024,7 @@ CREATE TABLE way19 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way20 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1087,7 +1087,7 @@ CREATE TABLE way20 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way21 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1194,7 +1194,7 @@ CREATE TABLE way21 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way22 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1231,7 +1231,7 @@ CREATE TABLE way22 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way23 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1420,7 +1420,7 @@ CREATE TABLE way23 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way24 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1451,7 +1451,7 @@ CREATE TABLE way24 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way25 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1464,7 +1464,7 @@ CREATE TABLE way25 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way26 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1485,7 +1485,7 @@ CREATE TABLE way26 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way27 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1506,7 +1506,7 @@ CREATE TABLE way27 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way28 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1575,7 +1575,7 @@ CREATE TABLE way28 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way29 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1590,7 +1590,7 @@ CREATE TABLE way29 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way30 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1719,7 +1719,7 @@ CREATE TABLE way30 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way31 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1746,7 +1746,7 @@ CREATE TABLE way31 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way32 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1765,7 +1765,7 @@ CREATE TABLE way32 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way33 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1802,7 +1802,7 @@ CREATE TABLE way33 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way34 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1835,7 +1835,7 @@ CREATE TABLE way34 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way35 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1866,7 +1866,7 @@ CREATE TABLE way35 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way36 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1881,7 +1881,7 @@ CREATE TABLE way36 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way37 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1898,7 +1898,7 @@ CREATE TABLE way37 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way38 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1919,7 +1919,7 @@ CREATE TABLE way38 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way39 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1950,7 +1950,7 @@ CREATE TABLE way39 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way40 (
   date date NOT NULL,
   time time NOT NULL,
@@ -1971,7 +1971,7 @@ CREATE TABLE way40 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way41 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2042,7 +2042,7 @@ CREATE TABLE way41 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way42 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2197,7 +2197,7 @@ CREATE TABLE way42 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way43 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2248,7 +2248,7 @@ CREATE TABLE way43 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way44 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2263,7 +2263,7 @@ CREATE TABLE way44 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way45 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2400,7 +2400,7 @@ CREATE TABLE way45 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way46 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2537,7 +2537,7 @@ CREATE TABLE way46 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way47 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2576,7 +2576,7 @@ CREATE TABLE way47 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way48 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2635,7 +2635,7 @@ CREATE TABLE way48 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way49 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2670,7 +2670,7 @@ CREATE TABLE way49 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way50 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2695,7 +2695,7 @@ CREATE TABLE way50 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way51 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2806,7 +2806,7 @@ CREATE TABLE way51 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 CREATE TABLE way52 (
   date date NOT NULL,
   time time NOT NULL,
@@ -2845,4 +2845,4 @@ CREATE TABLE way52 (
   h3_h2 int(11) DEFAULT NULL,
   h2_h1 int(11) DEFAULT NULL,
   PRIMARY KEY (date, time)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
