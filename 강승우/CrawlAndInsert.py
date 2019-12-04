@@ -67,7 +67,7 @@ db = pymysql.connect("localhost","root","1234","highwaytohell",charset="utf8")
 
 while(1):
 	nowtime = datetime.utcnow() + timedelta(hours=9)
-	if int(nowtime.strftime(%M))%10 ==0:
+	if int(nowtime.strftime("%M"))%10 == 0:
 		try:
 
 			cursor = db.cursor()
@@ -106,10 +106,11 @@ while(1):
 				insertion[i] += ")"
 				i = i+1
 			for i in range(0,52):
-				
+				cursor.execute(insertion[i])
+			db.commit()
 		except IndexError:
 			print(format_exc())
 
 		finally:
 			db.close()
-	delay(60000)
+	time.sleep(60000)
