@@ -81,6 +81,7 @@ while(1):
 			insertion = []
 			i=0
 			for ways in highwayall:
+				print(ways[1])
 				response = urlopen(base_url[i])
 				html = response.read()
 				soup = BeautifulSoup(html,"html.parser",from_encoding='utf-8')
@@ -90,7 +91,7 @@ while(1):
 					insertion[i] += ",h"+str(k+1)+"_h"+str(k+2)
 				for k in range(ways[2], 1, -1):
 					insertion[i] += ",h"+str(k)+"_h"+str(k-1)
-				insertion[i] += ") values(" + nowtime.strftime("%Y-%m-%d") +"," + nowtime.strftime("%H:%M:%S")
+				insertion[i] += ") values('" + nowtime.strftime("%Y-%m-%d") +"','" + nowtime.strftime("%H:%M:%S")+"'"
 				for k in range(ways[2]-1):
 					roadrange = ways[3+k] + "~" + ways[4+k]
 					strResult = soup.find("a",text=roadrange).findNext('dd').findNext('dd').text
