@@ -65,9 +65,9 @@ base_url.append("https://search.naver.com/search.naver?where=nexearch&sm=tab_etc
 
 db = pymysql.connect("localhost","root","1234","highwaytohell",charset="utf8")
 
-while(1):(need tab)
+while(1):
 	nowtime = datetime.utcnow() + timedelta(hours=9)
-	if int(nowtime.strftime(%M))%10 ==0: (need tab)
+	if int(nowtime.strftime(%M))%10 ==0:
 		try:
 
 			cursor = db.cursor()
