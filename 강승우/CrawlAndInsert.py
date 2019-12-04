@@ -108,6 +108,7 @@ while(1):
 			for i in range(0,52):
 				cursor.execute(insertion[i])
 			db.commit()
+			print("complete insertion at :"+nowtime.strftime("%Y-%m-%d") +"," + nowtime.strftime("%H:%M:%S"))
 		except IndexError:
 			print(format_exc())
 
