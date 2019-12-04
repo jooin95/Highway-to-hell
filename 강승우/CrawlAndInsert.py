@@ -63,9 +63,10 @@ base_url.append("https://search.naver.com/search.naver?where=nexearch&sm=tab_etc
 base_url.append("https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&query=%ED%98%B8%EB%82%A8%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C%20%EA%B5%90%ED%86%B5%EC%A0%95%EB%B3%B4")
 base_url.append("https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&query=%ED%98%B8%EB%82%A8%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C%EC%A7%80%EC%84%A0%20%EA%B5%90%ED%86%B5%EC%A0%95%EB%B3%B4")
 
-db = pymysql.connect("localhost","root","1234","highwaytohell",charset="utf8")
 
 while(1):
+	db = pymysql.connect("localhost","root","1234","highwaytohell",charset="utf8")
+
 	nowtime = datetime.utcnow() + timedelta(hours=9)
 	if int(nowtime.strftime("%M"))%10 == 0:
 		try:
@@ -115,4 +116,4 @@ while(1):
 
 		finally:
 			db.close()
-	time.sleep(60000)
+	time.sleep(5000)
