@@ -116,4 +116,4 @@ while(1):
 
 		finally:
 			db.close()
-	time.sleep(5000)
+	time.sleep(10)
