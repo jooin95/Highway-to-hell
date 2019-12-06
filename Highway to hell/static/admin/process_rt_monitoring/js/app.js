@@ -60,16 +60,13 @@ $(function() {
   setInterval(update, 1000);
   $('#startDate').datetimepicker({
         format: 'YYYY-MM-DD HH:mm:ss',
-        defaultDate: '2019-11-01 23:59:50'
+        defaultDate: moment()
   });
   $('#process').click(function(e) {
         var StartDate=$("#txtStartDate").val();
         var start_point=$("#start_point").val();
         var finish_point=$("#finish_point").val();
         playAlert = setInterval(function () {
-            StartDate=$("#txtStartDate").val();
-            start_point=$("#start_point").val();
-            finish_point=$("#finish_point").val();
             $.ajax({
                 url: '/vis/test_send/',
                 method: 'POST',
@@ -80,11 +77,24 @@ $(function() {
                 success: function (data) {
 //                    var sel_Data = data['Sel_list'];
 //                    console.log(sel_Data.startDate);
-                      var data1 = data['data1'];
-                      var data2 = data['data2'];
+                      var Data1 = JSON.parse(data['data1']);
+                      var Data2 = JSON.parse(data['data2']);
+                      var place1X = Data1['places'][0]['x'];
+                      var place1Y = Data1['places'][0]['y'];
+                      var place2X = Data2['places'][0]['x'];
+                      var place2Y = Data2['places'][0]['y'];
                       var startDate = data['startDate'];
-                      console.log(data['data1'].'status');
-                      console.log(data['data2'].places);
+
+                      $.ajax({
+                        url: '/vis/test_send/',
+                        method: 'POST',
+                        dataType: 'json',
+                        data: {"StartDate":StartDate, "start_point":start_point, "finish_point":finish_point},
+                        beforeSend: function () {
+                        },
+                        success: function (data) {
+                        }
+                      });
                 }
             });
         },5000);

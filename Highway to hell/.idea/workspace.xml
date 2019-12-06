@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a862af6d-3663-4a24-b734-f11286ff869d" name="Default Changelist" comment="" />
+    <list default="true" id="a862af6d-3663-4a24-b734-f11286ff869d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualization/templates/test/test3.html" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/templates/test/test3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualization/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,17 +22,17 @@
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/visualization/templates/test/analysis2.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="420">
-                    <caret line="28" column="74" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="74" />
+                  <state relative-caret-position="465">
+                    <caret line="31" column="35" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="35" />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file pinned="false" current-in-tab="true">
+            <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/visualization/views.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="573">
-                    <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+                  <state relative-caret-position="574">
+                    <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
                     <folding>
                       <element signature="e#0#24#0" expanded="true" />
                     </folding>
@@ -34,10 +40,10 @@
                 </provider>
               </entry>
             </file>
-            <file pinned="false" current-in-tab="false">
+            <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/visualization/templates/test/test3.html">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="840">
+                  <state relative-caret-position="558">
                     <caret line="56" column="71" selection-start-line="56" selection-start-column="71" selection-end-line="56" selection-end-column="71" />
                   </state>
                 </provider>
@@ -53,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+            <state relative-caret-position="222">
+              <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -67,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/visualization/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="105">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -107,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="135">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -160,6 +166,9 @@
       <find>test_send</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -200,74 +209,43 @@
         <option value="$PROJECT_DIR$/main/templates/layoutFull/main_sidebar.html" />
         <option value="$PROJECT_DIR$/visualization/templates/test/analysis2.html" />
         <option value="$PROJECT_DIR$/visualization/models.py" />
+        <option value="$PROJECT_DIR$/visualization/views.py" />
         <option value="$PROJECT_DIR$/visualization/templates/test/test3.html" />
         <option value="$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js" />
-        <option value="$PROJECT_DIR$/visualization/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-10" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="adminingDJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adminingDJ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adminingDJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adminingDJ" type="462c0819:PsiDirectoryNode" />
-              <item name="adminingDJ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adminingDJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adminingDJ" type="462c0819:PsiDirectoryNode" />
-              <item name="visualization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adminingDJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adminingDJ" type="462c0819:PsiDirectoryNode" />
-              <item name="visualization" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adminingDJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adminingDJ" type="462c0819:PsiDirectoryNode" />
-              <item name="visualization" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../adminingDJ" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\82103\PycharmProjects\adminingDJ\static\admin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/visualization/templates/agrifoodanalysis" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\82103\PycharmProjects\adminingDJ\static\admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -381,9 +359,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="782" height="831" extended-state="0" />
+    <frame x="-8" y="0" width="783" height="832" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22252011" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22222222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -397,7 +376,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.24441834" side_tool="true" weight="0.2932761" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.7555817" visible="true" weight="0.35285714" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.7555817" visible="true" weight="0.24" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4986413" weight="0.32904148" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -413,7 +392,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Desktop/RTWorkpieceController.java" />
     <entry file="file://$PROJECT_DIR$/../Desktop/RTWorkpieceRepository.java" />
     <entry file="file://$PROJECT_DIR$/../AppData/Local/Temp/BNZ.5db634b67fc4938/app.js" />
     <entry file="file://$PROJECT_DIR$/static/admin/process_rt_monitoring/js/bootstrap-toggle.js">
@@ -473,19 +451,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/visualization/templates/test/test.html" />
     <entry file="file://$PROJECT_DIR$/visualization/templates/test/test-visualization.html" />
-    <entry file="file://$PROJECT_DIR$/../Desktop/process_rt_monitoring/process_rt_monitoring.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Desktop/process_rt_monitoring/process_rt_monitoring.html" />
     <entry file="file://$PROJECT_DIR$/visualization/templates/test/test-visualization3.html" />
     <entry file="file://$PROJECT_DIR$/visualization/templates/test/test2.html" />
     <entry file="file://$PROJECT_DIR$/visualization/templates/test/test-visualization2.html" />
-    <entry file="file://$PROJECT_DIR$/../Desktop/process_rt_monitoring/process_rt_monitoring/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3010">
-          <caret line="550" column="31" selection-start-line="550" selection-start-column="31" selection-end-line="550" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Desktop/process_rt_monitoring/process_rt_monitoring/js/app.js" />
     <entry file="file://$PROJECT_DIR$/static/js/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -550,26 +520,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppData/Local/Programs/Python/Python37/Lib/site-packages/django/utils/functional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppData/Local/Programs/Python/Python37/Lib/site-packages/django/utils/functional.py" />
     <entry file="file://$PROJECT_DIR$/visualization/templates/underdev/underdev.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/visualization/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="105">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -599,7 +556,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="135">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -607,27 +564,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../process_rt_monitoring/process_rt_monitoring/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7939" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualization/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/visualization/templates/test/analysis2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="74" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="74" />
+        <state relative-caret-position="465">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/visualization/templates/test/test3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
+        <state relative-caret-position="558">
           <caret line="56" column="71" selection-start-line="56" selection-start-column="71" selection-end-line="56" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/visualization/views.py">
+    <entry file="file://$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="222">
+          <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
         </state>
       </provider>
     </entry>

@@ -41,12 +41,5 @@ def test_send(request):
            ]
     f = subprocess.Popen(cmd, stdout=subprocess.PIPE, encoding="utf-8").stdout
     data2 = f.read().strip()
-
-    sel_list = {
-        'startDate': startDate,
-        'start_point': start_point,
-        'finish_point': finish_point,
-    }
-    print(data1)
-    print(data2)
+    f.close()
     return JsonResponse({"data1": data1, "data2": data2, "startDate": startDate})
