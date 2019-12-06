@@ -85,16 +85,17 @@ $(function() {
                       var place2Y = Data2['places'][0]['y'];
                       var startDate = data['startDate'];
 
-                      $.ajax({
-                        url: '/vis/test_send/',
-                        method: 'POST',
-                        dataType: 'json',
-                        data: {"StartDate":StartDate, "start_point":start_point, "finish_point":finish_point},
-                        beforeSend: function () {
-                        },
-                        success: function (data) {
-                        }
-                      });
+                        console.log(place1X);
+//                      $.ajax({
+//                        url: '/vis/test_visualize/',
+//                        method: 'POST',
+//                        dataType: 'json',
+//                        data: {"place1X":place1X, "place1Y":place1Y, "place2X":place2X, "place2Y":place2Y, "startDate":startDate},
+//                        beforeSend: function () {
+//                        },
+//                        success: function (data) {
+//                        }
+//                      });
                 }
             });
         },5000);

@@ -22,13 +22,15 @@ def test_send(request):
     startDate = request.POST['StartDate']
     start_point = request.POST['start_point']
     finish_point = request.POST['finish_point']
+    myNaverKey1 = "클라이언트키1";
+    myNaverKey2 = "클라이언트키2";
     test1 = parse.quote_plus(start_point)
     test2 = parse.quote_plus(finish_point)
     cmd = ['curl',
            'https://naveropenapi.apigw.ntruss.com/map-place/v1/search?query=' +
            test1 + '&coordinate=127.1054328,37.3595963',
-           '-H', 'X-NCP-APIGW-API-KEY-ID:x2i0xjwran', '-H',
-           'X-NCP-APIGW-API-KEY:ced9h4Hk4cUKJmCqa2QcUV3Ows7I0byrLEogtWdr', '-v'
+           '-H', 'X-NCP-APIGW-API-KEY-ID:' + myNaverKey1, '-H',
+           'X-NCP-APIGW-API-KEY:' + myNaverKey2, '-v'
           ]
     f = subprocess.Popen(cmd, stdout=subprocess.PIPE, encoding="utf-8").stdout
     data1 = f.read().strip()
@@ -36,10 +38,18 @@ def test_send(request):
     cmd = ['curl',
            'https://naveropenapi.apigw.ntruss.com/map-place/v1/search?query=' +
            test2 + '&coordinate=127.1054328,37.3595963',
-           '-H', 'X-NCP-APIGW-API-KEY-ID:x2i0xjwran', '-H',
-           'X-NCP-APIGW-API-KEY:ced9h4Hk4cUKJmCqa2QcUV3Ows7I0byrLEogtWdr', '-v'
+           '-H', 'X-NCP-APIGW-API-KEY-ID:' + myNaverKey1, '-H',
+           'X-NCP-APIGW-API-KEY:' + myNaverKey2, '-v'
            ]
     f = subprocess.Popen(cmd, stdout=subprocess.PIPE, encoding="utf-8").stdout
     data2 = f.read().strip()
     f.close()
     return JsonResponse({"data1": data1, "data2": data2, "startDate": startDate})
+
+
+def test_visualize(request):
+    place1X = request.POST['place1X']
+    place1Y = request.POST['place1Y']
+    place2X = request.POST['place2X']
+    place2Y = request.POST['place2Y']
+    startDate = request.POST['startDate']
