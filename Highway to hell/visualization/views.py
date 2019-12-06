@@ -22,8 +22,8 @@ def test_send(request):
     startDate = request.POST['StartDate']
     start_point = request.POST['start_point']
     finish_point = request.POST['finish_point']
-    myNaverKey1 = "클라이언트키1";
-    myNaverKey2 = "클라이언트키2";
+    myNaverKey1 = "클키1";
+    myNaverKey2 = "클키2";
     test1 = parse.quote_plus(start_point)
     test2 = parse.quote_plus(finish_point)
     cmd = ['curl',
