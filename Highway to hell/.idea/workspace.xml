@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a862af6d-3663-4a24-b734-f11286ff869d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/visualization/templates/test/analysis1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visualization/templates/test/checkuser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visualization/templates/test/visualize.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminingDJ/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminingDJ/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/layoutFull/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/layoutFull/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/layoutFull/main_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/layoutFull/main_sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/templates/test/test3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminingDJ/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/adminingDJ/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,20 +18,8 @@
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="177">
-                    <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/visualization/views.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="528">
-                    <caret line="76" selection-start-line="76" selection-end-line="76" />
-                    <folding>
-                      <element signature="e#0#24#0" expanded="true" />
-                    </folding>
+                  <state relative-caret-position="315">
+                    <caret line="69" column="36" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="36" />
                   </state>
                 </provider>
               </entry>
@@ -55,6 +31,18 @@
                     <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
                     <folding>
                       <element signature="e#0#28#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/visualization/views.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="150">
+                    <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+                    <folding>
+                      <element signature="e#0#24#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -85,11 +73,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/visualization/templates/test/checkuser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
+            <state relative-caret-position="367">
               <caret line="48" column="71" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/adminingDJ/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -180,7 +177,6 @@
         <option value="$PROJECT_DIR$/adminingDJ/test" />
         <option value="$PROJECT_DIR$/visualization/templates/test/test-visualization3.html" />
         <option value="$PROJECT_DIR$/visualization/templates/test/test-visualization2.html" />
-        <option value="$PROJECT_DIR$/adminingDJ/settings.py" />
         <option value="$PROJECT_DIR$/main/templates/layoutFull/footer.html" />
         <option value="$PROJECT_DIR$/main/templates/layoutFull/layout.html" />
         <option value="$PROJECT_DIR$/visualization/templates/test/analysis2.html" />
@@ -198,6 +194,7 @@
         <option value="$PROJECT_DIR$/visualization/templates/test/analysis1.html" />
         <option value="$PROJECT_DIR$/visualization/templates/test/checkuser.html" />
         <option value="$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js" />
+        <option value="$PROJECT_DIR$/adminingDJ/settings.py" />
         <option value="$PROJECT_DIR$/visualization/views.py" />
       </list>
     </option>
@@ -382,7 +379,7 @@
     <frame x="-10" y="0" width="811" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23225807" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23225807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -396,7 +393,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295129" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.24441834" side_tool="true" weight="0.2932761" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.7555817" visible="true" weight="0.23285714" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.7555817" visible="true" weight="0.23285714" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4986413" weight="0.32904148" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -509,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminingDJ/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="145" selection-start-line="145" selection-end-line="151" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/visualization/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-578">
@@ -607,6 +597,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/visualization/templates/test/analysis1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/visualization/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -617,31 +614,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/visualization/templates/test/analysis1.html">
+    <entry file="file://$PROJECT_DIR$/visualization/templates/test/checkuser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="367">
+          <caret line="48" column="71" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/visualization/templates/test/checkuser.html">
+    <entry file="file://$PROJECT_DIR$/adminingDJ/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="48" column="71" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
+        <state relative-caret-position="240">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+        <state relative-caret-position="315">
+          <caret line="69" column="36" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/visualization/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="150">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
