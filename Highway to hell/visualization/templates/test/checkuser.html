@@ -21,18 +21,11 @@
     <!-- Default box -->
     <div class="box" id="graphArea">
         <div class="box-body">
-            <form method="post" id="formTest" action="{% url 'vis_test3' %}" class="form-horizontal">
+            <form method="post" id="formTest" action="{% url 'checkuser' %}" class="form-horizontal">
                 {% csrf_token %}
-                {% include 'test/analysis2.html' %}
+                {% include 'test/analysis1.html' %}
             </form>
         </div>
-
-        <div style="width:500px; height:300px;" id="testing"></div>
-        <div style="width:500px; height:300px;" id="chart2"></div>
-        <div style="width:500px; height:300px;" id="chart3"></div>
-        <div style="width:500px; height:300px;" id="chart4"></div>
-        <div style="width:500px; height:300px;" id="chart5"></div>
-
         <script src="{% static 'js/jquery-3.4.0.min.js' %}"></script>
         <div class="charts"></div>
     </div>
@@ -40,8 +33,7 @@
 {% endblock content %}
 {% block js %}
 <!-- bakit's 라이브러리-->
-<!-- bakit's 라이브러리
-<script src="{% static 'js/test.js' %}"></script>-->
+<!-- bakit's 라이브러리-->
 <script src="https://code.jquery.com/jquery-2.2.4.js"></script>>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
@@ -54,5 +46,5 @@
 <script src="{% static 'libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js' %}"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="{% static 'libs/iCheck/icheck.min.js' %}"></script>
-<script src="{% static 'admin/process_rt_monitoring/js/app.js' %}?ver=8"></script>
+<script src="{% static 'admin/process_rt_monitoring/js/app.js' %}?ver=3"></script>
 {% endblock js %}

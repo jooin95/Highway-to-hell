@@ -20,8 +20,9 @@ from django.conf.urls.static import static
 from django.views.generic import RedirectView
 
 urlpatterns = [
-    path('', RedirectView.as_view(pattern_name='vis_test3', permanent=False)),
-    path('vis/', include('visualization.urls'))
+    path('', RedirectView.as_view(pattern_name='checkuser', permanent=False)),
+    path('test/', include('visualization.urls')),
+    path('vis/', include('visualization.urls')),
 ]
 
 if settings.DEBUG:
