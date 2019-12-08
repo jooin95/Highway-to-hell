@@ -43,7 +43,7 @@ try:
 			data1 = f.read().strip()
 			f.close()
 			data = json.loads(data1)
-			insertion[k] += data[2][0][4] + "," + data[2][0][5] + ");"
+			insertion[k] += data['places'][0]['x'] + "," + data['places'][0]['y'] + ");"
 			i += 1
 			k += 1
 	
