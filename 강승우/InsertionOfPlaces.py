@@ -27,7 +27,7 @@ try:
 			if i-2 > row[2]:
 				break
 			insertion.append("insert into place values('")
-			insertion[k] += row[0] + "h" + (i-2)+"',"
+			insertion[k] += row[0] + "h" + str(i-2)+"',"
 			cmd = ['curl',
                'https://naveropenapi.apigw.ntruss.com/map-place/v1/search?query=' +
                parse.quote_plus(high) + '&coordinate=127.1026513,37.2654939',
@@ -38,7 +38,7 @@ try:
 			data1 = f.read().strip()
 			f.close()
 			data1 = json.dumps(data1, cls=DjangoJSONEncoder)
-			insertion[k] += data1['places'][0]['x']+ "," + data1['places'][0]['y'] + ");"
+			insertion[k] += str(data1['places'][0]['x'])+ "," + str(data1['places'][0]['y']) + ");"
 			i += 1
 		k += 1
 	
