@@ -6,6 +6,7 @@ urlpatterns = [
     path('visualize/', views.visualize, name="visualize"),
     path('test_send/', views.test_send, name="test_send"),
     path('test_visualize/', views.test_visualize, name="test_visualize"),
+    path('test_analysis/', views.test_analysis, name="test_analysis"),
     path('test/', views.visualize, name="test"),
 ]
 

@@ -15,9 +15,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    '113.198.137.241',
-    '113.198.137.245',
-    '113.198.137.165',
     '34.232.249.58'
 ]
 
@@ -75,10 +72,10 @@ WSGI_APPLICATION = 'adminingDJ.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'PONGSAN',
-        'USER': 'pongsan',
-        'PASSWORD': 'pSan163!$@',
-        'HOST': '113.198.137.146',
+        'NAME': 'highwaytohell',
+        'USER': 'root',
+        'PASSWORD': '1234',
+        'HOST': '34.232.249.58',
         'PORT': '3306',
     }
 }
