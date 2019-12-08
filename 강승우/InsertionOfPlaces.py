@@ -43,8 +43,7 @@ try:
 			data1 = f.read().strip()
 			f.close()
 			data1 = json.dumps(data1, cls=DjangoJSONEncoder)
-			datal = data1[0]
-			insertion[k] += format(data1[2][0][4],'11.7f') + "," + format(data1[2][0][5],'10.7f') + ");"
+			insertion[k] += data1[2][0][4] + "," + data1[2][0][5] + ");"
 			i += 1
 			k += 1
 	
