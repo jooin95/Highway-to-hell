@@ -6,6 +6,7 @@ from django.shortcuts import render
 import json
 from django.core.serializers.json import DjangoJSONEncoder
 from urllib import parse
+import subprocess
 
 db = pymysql.connect("localhost","root","1234","highwaytohell",charset="utf8")
 myNaverKey1 = "x2i0xjwran"
