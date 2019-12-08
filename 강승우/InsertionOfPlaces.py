@@ -42,7 +42,7 @@ try:
 			i += 1
 		k += 1
 	
-	for i in insertion
+	for i in insertion:
 		print i
 except IndexError:
 	print(format_exc())
