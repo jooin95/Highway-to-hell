@@ -44,7 +44,7 @@ try:
 			f.close()
 			data = json.loads(data1)
 			if data['meta']['count'] == 0 :
-				insertion.remove(k)
+				del insertion[k]
 			else :
 				insertion[k] += data['places'][0]['x'] + "," + data['places'][0]['y'] + ");"
 				k += 1
