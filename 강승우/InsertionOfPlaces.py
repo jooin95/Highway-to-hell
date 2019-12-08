@@ -43,9 +43,12 @@ try:
 			data1 = f.read().strip()
 			f.close()
 			data = json.loads(data1)
-			insertion[k] += data['places'][0]['x'] + "," + data['places'][0]['y'] + ");"
+			if data['meta']['count'] == 0 :
+				insertion.remove(k)
+			else :
+				insertion[k] += data['places'][0]['x'] + "," + data['places'][0]['y'] + ");"
+				k += 1
 			i += 1
-			k += 1
 	
 	for i in insertion:
 		print(i)
