@@ -24,13 +24,15 @@ try:
 	insertion = []
 	k=0
 	for row in highwayall:
-		i = 3
+		i = 0
 		for high in row:
+			if i ==0 ||i==1 || i==2 :
+				continue
+			
 			if i-2 > row[2]:
 				break
 			insertion.append("insert into place values('")
 			insertion[k] += row[0] + "h" + str(i-2)+"',"
-			print(parse.quote_plus(high))
 			cmd = ['curl',
                'https://naveropenapi.apigw.ntruss.com/map-place/v1/search?query=' +
                parse.quote_plus(high) + '&coordinate=127.1026513,37.2654939',
