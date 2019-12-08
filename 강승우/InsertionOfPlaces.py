@@ -26,7 +26,7 @@ try:
 		for high in row:
 			if i-2 > row[2]:
 				break
-			insertion[k] = "insert into place values('"
+			insertion.append("insert into place values('")
 			insertion[k] += row[0] + "h" + (i-2)+"',"
 			cmd = ['curl',
                'https://naveropenapi.apigw.ntruss.com/map-place/v1/search?query=' +
