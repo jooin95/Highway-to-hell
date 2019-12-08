@@ -42,7 +42,6 @@ try:
 			f = subprocess.Popen(cmd, stdout=subprocess.PIPE, encoding="utf-8").stdout
 			data1 = f.read().strip()
 			f.close()
-			data1 = json.dumps(data1, cls=DjangoJSONEncoder)
 			data = json.loads(data1)
 			insertion[k] += data[2][0][4] + "," + data[2][0][5] + ");"
 			i += 1
