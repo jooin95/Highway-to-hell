@@ -96,7 +96,6 @@ $(function() {
                     analysis(Data, startDate);
                     console.log(Data['route']['trafast'][0]['path']);
 
-
                 }
             });
 //        },5000);
