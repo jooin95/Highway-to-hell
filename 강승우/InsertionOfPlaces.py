@@ -40,7 +40,7 @@ try:
 			data1 = f.read().strip()
 			f.close()
 			data1 = json.dumps(data1, cls=DjangoJSONEncoder)
-			insertion[k] += str(data1['places'][0]['x'])+ "," + str(data1['places'][0]['y']) + ");"
+			insertion[k] += format(data1['places'][0]['x'],'11.7f')+ "," + format(data1['places'][0]['y'],'10.7f') + ");"
 			i += 1
 		k += 1
 	
