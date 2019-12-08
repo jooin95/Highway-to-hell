@@ -45,7 +45,7 @@ try:
 			f.close()
 			data1 = json.dumps(data1, cls=DjangoJSONEncoder)
 			datal = data1[0]
-			insertion[k] += data1['places'][0]['x'] + "," + data1['places'][0]['y'] + ");"
+			insertion[k] += data1[2][0][4] + "," + data1[2][0][5] + ");"
 			i += 1
 		k += 1
 	
