@@ -29,7 +29,6 @@ try:
 			if i ==0 or i==1 or i==2 :
 				i += 1
 				continue
-			
 			if i-2 > row[2]:
 				break
 			insertion.append("insert into place values('")
@@ -45,9 +44,9 @@ try:
 			f.close()
 			data1 = json.dumps(data1, cls=DjangoJSONEncoder)
 			datal = data1[0]
-			insertion[k] += data1[2][0][4] + "," + data1[2][0][5] + ");"
+			insertion[k] += format(data1[2][0][4],'11.7f') + "," + format(data1[2][0][5],'10.7f') + ");"
 			i += 1
-		k += 1
+			k += 1
 	
 	for i in insertion:
 		print(i)
