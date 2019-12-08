@@ -27,6 +27,7 @@ try:
 		i = 0
 		for high in row:
 			if i ==0 or i==1 or i==2 :
+				i += 1
 				continue
 			
 			if i-2 > row[2]:
