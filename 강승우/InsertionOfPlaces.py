@@ -24,7 +24,7 @@ try:
 	for row in highwayall:
 		i = 3
 		for high in row:
-			if i-2 > row[1]
+			if i-2 > row[1]:
 				break
 			insertion[k] = "insert into place values('"
 			insertion[k] += row[0] + "h" + (i-2)+"',"
