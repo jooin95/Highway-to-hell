@@ -113,7 +113,7 @@ def test_analysis(request):
     data2 = request.POST["data2"]
     data3 = request.POST["data3"]
     guide = request.POST["guide"]
-    print(guide)
+
     distance_time = request.POST["distance_time"]
     type = request.POST.get('guide1','')
     duration = request.POST.get('guide2','')
@@ -160,6 +160,7 @@ def test_analysis(request):
             'TfD': collect
         }
         select.append(dict)
+        print(dict)
         a = a + 1
     final = select
     final = json.dumps(final, cls=DjangoJSONEncoder, ensure_ascii=False)
