@@ -63,8 +63,8 @@ try:
 	
 	for row in places:
 		if row[1] == maintoken:
-			hightoken = row[0].split('h')[0]
-			ways.append(row[0])
+			hightoken = (row[0].split('h'))[0]
+			ways.append(hightoken)
 	
 	print (maintoken)
 	print (ways)
@@ -75,6 +75,7 @@ try:
 	Jways+="]}"
 	print (Jways)
 	rec = json.loads(Jways)
+	print (rec)
 except IndexError:
 	print(format_exc())
 
