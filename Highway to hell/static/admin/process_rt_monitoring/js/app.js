@@ -74,6 +74,7 @@ $(function() {
 //                Data = Data.replace(/\]/gi, "");
                 Data = Data.replace(/\ /gi, "");
                 Data = JSON.parse(Data);
+                console.log(Data);
                 let section1 = Data['select'][0]['TfD'];
                 var name1 = Data['select'][0]['name'];
                 let section2 = Data['select'][1]['TfD'];
@@ -95,7 +96,6 @@ $(function() {
                 .append("<td>"+total+"</td>")
                 .append("<td>"+rate+"</td>")
                 .append("</tr>");
-                console.log(section1);
                 var chart1 = c3.generate({
                     bindto: ".charts1",
                     size: {

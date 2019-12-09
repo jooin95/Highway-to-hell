@@ -150,6 +150,7 @@ def test_analysis(request):
         select.append(dict)
         a = a + 1
     final = select
+    print(final)
     final = json.dumps(final, cls=DjangoJSONEncoder, ensure_ascii=False)
-    return JsonResponse({"select": select})
+    return JsonResponse({"final": final})
 
