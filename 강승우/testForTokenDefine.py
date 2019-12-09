@@ -14,7 +14,7 @@ myNaverKey2 = "ced9h4Hk4cUKJmCqa2QcUV3Ows7I0byrLEogtWdr"
 
 
 try:
-	token = '한남IC'
+	token = '수원신갈IC'
 	cursor = db.cursor()
 
 	sql = "select * from place"
