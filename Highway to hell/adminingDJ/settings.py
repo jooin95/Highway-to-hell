@@ -145,6 +145,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 CORS_ORIGIN_ALLOW_ALL = True
