@@ -150,12 +150,11 @@ def test_analysis(request):
                     '역방향': sum2
                 }
                 b = b + 1
-
+                collect.append(dic)
         dict = {
             'name': data[a],
             'TfD': collect
         }
-        collect.append(dic)
         select.append(dict)
         print(dict)
         a = a + 1
