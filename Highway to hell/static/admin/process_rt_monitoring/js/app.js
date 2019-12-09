@@ -58,12 +58,12 @@ $(function() {
         $('#current_time').html(moment().format('YYYY년 MM월 DD일 HH시 mm분 ss초'));
 
     }
-    function analysis(data1, data2, data3, total, rate){
+    function analysis(data1, data2, data3, total, rate, guide){
         $.ajax({
             url: '/test/test_analysis/',
             method: 'POST',
             dataType: 'json',
-            data: {"data1": data1, "data2" : data2, "data3" : data3, "startDate" : startDate},
+            data: {"data1": data1, "data2" : data2, "data3" : data3, "startDate" : startDate, "duration_time":rate,"guide" : guide},
             beforeSend: function () {
 
             },
@@ -236,7 +236,7 @@ $(function() {
                         }
                     }
                     distance_time += end_max;
-                    analysis(section[0]['name'], section[1]['name'], section[2]['name'], total_time, distance_time);
+                    analysis(section[0]['name'], section[1]['name'], section[2]['name'], total_time, distance_time, guide);
                 }
             });
     }
