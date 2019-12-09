@@ -93,8 +93,8 @@ $(function() {
                 $('.an_ta')
                 .append("<tr>")
                 .append("<td>"+startDate+"</td>")
-                .append("<td>"+total+"</td>")
-                .append("<td>"+rate+"</td>")
+                .append("<td>"+total/6000+"</td>")
+                .append("<td>"+rate+/6000"</td>")
                 .append("</tr>");
                 var chart1 = c3.generate({
                     bindto: ".charts1",
@@ -243,7 +243,7 @@ $(function() {
     setInterval(update, 1000);
     $('#startDate').datetimepicker({
         format: 'YYYY-MM-DD HH:mm:ss',
-        defaultDate: moment()
+        defaultDate: '2019-12-09 13:41:49'
     });
     $('#process').click(function(e) {
         var StartDate=$("#txtStartDate").val();
