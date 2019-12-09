@@ -7,6 +7,7 @@ import json
 from django.core.serializers.json import DjangoJSONEncoder
 from urllib import parse
 import subprocess
+from collections import OrderedDict
 
 db = pymysql.connect("localhost","root","1234","highwaytohell",charset="utf8")
 myNaverKey1 = "x2i0xjwran"
@@ -76,19 +77,12 @@ try:
 	print (maintoken)
 	print (tokens)
 	print (ways)
-	Jways = "{ 'token' : ["
-	for row in tokens:
-		Jways += "'"+row+"',"
-	Jways.rstrip(",")
-	Jways+="],"
-	Jways += "'highways' : ["
-	for row in ways:
-		Jways += "'"+row+"',"
-	Jways.rstrip(",")
-	Jways+="]}"
-	print (Jways)
-	rec = json.loads(Jways)
-	print (rec)
+	rec = OrderedDict()
+	rec["tokens"] = tokens
+	rec["ways"] = ways
+	rt = json.dumps(rec, ensure_ascii=False, indent="\t")
+	dat = json.loads(rt)
+	print (dat)
 except IndexError:
 	print(format_exc())
 
