@@ -237,7 +237,7 @@ $(function() {
                         }
                     }
                     distance_time += end_max;
-                    analysis(section[0]['name'], section[1]['name'], section[2]['name'], total_time, distance_time, gui);
+                    analysis(section[0]['name'], section[1]['name'], section[2]['name'], total_time, distance_time, guide);
                 }
             });
     }
