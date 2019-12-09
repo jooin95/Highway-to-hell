@@ -4,11 +4,12 @@ from .ldafile import lda, correlation
 from django.http import JsonResponse
 import subprocess
 import json
+from datetime import datetime, timedelta
 from urllib import parse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.serializers.json import DjangoJSONEncoder
-from datetime import datetime, timedelta
 import time
+from django.db import connection
 import pymysql
 from traceback import format_exc
 
@@ -101,40 +102,54 @@ def test_visualize(request):
 
 @csrf_exempt
 def test_analysis(request):
-    data = request.POST["data"]
-    start = request.POST["startDate"].split()
+    a = 0
+    data1 = request.POST["data1"]
+    data2 = request.POST["data2"]
+    data3 = request.POST["data3"]
+    startDate = request.POST["startDate"]
+    Date = datetime.strptime(startDate, '%Y-%m-%d %H:%M:%S').date()
+    Time = datetime.strptime(startDate, '%Y-%m-%d %H:%M:%S').time()
+    before = Date - timedelta(3)
+    after = datetime.strptime(startDate, '%Y-%m-%d %H:%M:%S') + timedelta(hours=3)
+    print(after)
+    after = after.time()
+    print(after)
+    data = [data1, data2, data3]
+    select = []
+    for d in data:
+        cursor = connection.cursor()
+        cur = connection.cursor()
+        query_string = "select ID, num from highways where name = %s;"
+        cursor.execute(query_string, d)
+        row = cursor.fetchall()
+        collect = []
+        string = "select * from " + row[0][0] + " where date >= %s AND time >= %s AND time <= %s;"
+        cur.execute(string, (before, Time, after))
+        rs = cur.fetchall()
+        b = 0
+        for r in rs:
+            sum1 = 0
+            sum2 = 0
+            for i in range(2, row[0][1] + 1):
+                sum1 = sum1 + r[i]
+            for i in range(row[0][1] + 2, 2 * (row[0][1] - 1) + 2):
+                sum2 = sum2 + r[i]
+            dic = {
+                'index': b,
+                'Date': r[0],
+                'Time': r[1],
+                '정방향': sum1,
+                '역방향': sum2
+            }
+            b = b + 1
+            collect.append(dic)
+        dict = {
+            'name': data[a],
+            'TfD': collect
+        }
+        select.append(dict)
+        a = a + 1
+    final = select
+    final = json.dumps(final, cls=DjangoJSONEncoder, ensure_ascii=False)
+    return JsonResponse({"select": select})
 
-    section = data['route']['trafast'][0]['section']
-    guide = data['route']['trafast'][0]['guide']
-
-    startNal = start[0].split('-')
-    startTime = start[1].split(':')
-
-    startYear = int(startNal[0])
-    startMonth = int(startNal[1])
-    startDate = int(startNal[2])
-    startHour = int(startTime[0])
-    startMin = int(startTime[1])
-    startDay = datetime.date(startYear,startMonth,startDate).weekday()
-
-    db = pymysql.connect("localhost", "root", "1234", "highwaytohell", charset="utf8")
-    nowtime = datetime.utcnow() + timedelta(hours=9)
-
-    nowMin = int(nowtime.strftime("%M"))
-    nowHour = int(nowtime.strftime("%H"))
-    nowYear = int(nowtime.strftime("%Y"))
-    nowMonth = int(nowtime.strftime("%m"))
-    nowDate = int(nowtime.strftime("%d"))
-    nowDay = nowtime.weekday()
-
-    try:
-        cursor = db.cursor()
-        sql = "select date, time from way1"
-        cursor.execute(sql)
-        times = cursor.fetchall()
-    except IndexError:
-        print(format_exc())
-    finally:
-        db.close()
-
-    return JsonResponse({"data": data})

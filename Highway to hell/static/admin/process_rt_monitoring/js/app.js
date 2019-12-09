@@ -58,21 +58,134 @@ $(function() {
         $('#current_time').html(moment().format('YYYY년 MM월 DD일 HH시 mm분 ss초'));
 
     }
-    function analysis(Data, startDate){
+    function analysis(data1, data2, data3){
         $.ajax({
             url: '/test/test_analysis/',
             method: 'POST',
             dataType: 'json',
-            data: {"data": Data, "startDate0" : startDate},
+            data: {"data1": data1, "data2" : data2, "data3" : data3, "startDate" : startDate},
             beforeSend: function () {
 
             },
             success: function (data) {
                 /*성공시 작업 data는 return값*/
-
-
-
-
+                var Data = JSON.stringify(data);
+//                Data = Data.replace(/\[/gi, "");
+//                Data = Data.replace(/\]/gi, "");
+                Data = Data.replace(/\ /gi, "");
+                Data = JSON.parse(Data);
+                let section1 = Data['select'][0]['TfD'];
+                var name1 = Data['select'][0]['name'];
+                let section2 = Data['select'][1]['TfD'];
+                var name2 = Data['select'][1]['name'];
+                let section3 = Data['select'][2]['TfD'];
+                var name3 = Data['select'][2]['name'];
+                $('.n1')
+                .append(name1);
+                $('.n2')
+                .append(name2);
+                $('.n3')
+                .append(name3);
+                console.log(data);
+//                if(section1){
+//                    for(i = 0 ; i<section1.length; i++)
+//                    {
+//                        $('.table_body1')
+//                        .append("<tr>")
+//                        .append("<td> "+section1[i].Date+" "+section1[i].Time+" </td>")
+//                        .append("<td> "+section1[i].sum1+" </td>")
+//                        .append("<td> "+section1[i].sum2+" </td>")
+//                        .append("<tr> ");
+//                        .append("<tr> ");
+//                    }
+//                }
+                var chart1 = c3.generate({
+                    bindto: ".charts1",
+                    size: {
+                       height: 300
+                    },
+                    data: {
+                        json: section1,
+                        keys: {
+                            x: 'index', // it's possible to specify 'x' when category axis
+                            value: ['정방향', '역방향']
+                        },
+                        names:{
+                            정방향:"정방향",
+                            역방향:"역방향"
+                        },
+                    },
+                    axis: {
+                        x: {
+                            type: 'category',
+                            categories: ['Time']
+                        },
+                        y: {
+                            label: { // ADD
+                            text: '방향',
+                            position: 'outer-middle'
+                            }
+                        }
+                    }
+                });
+                var chart2 = c3.generate({
+                    bindto: ".charts2",
+                    size: {
+                       height: 300
+                    },
+                    data: {
+                        json: section2,
+                        keys: {
+                            x: 'index', // it's possible to specify 'x' when category axis
+                            value: ['정방향', '역방향']
+                        },
+                        names:{
+                            정방향:"정방향",
+                            역방향:"역방향"
+                        },
+                    },
+                    axis: {
+                        x: {
+                            type: 'category',
+                            categories: ['Time']
+                        },
+                        y: {
+                            label: { // ADD
+                            text: '방향',
+                            position: 'outer-middle'
+                            }
+                        }
+                    }
+                });
+                var chart3 = c3.generate({
+                    bindto: ".charts3",
+                    size: {
+                       height: 300
+                    },
+                    data: {
+                        json: section3,
+                        keys: {
+                            x: 'index', // it's possible to specify 'x' when category axis
+                            value: ['정방향', '역방향']
+                        },
+                        names:{
+                            정방향:"정방향",
+                            역방향:"역방향"
+                        },
+                    },
+                    axis: {
+                        x: {
+                            type: 'category',
+                            categories: ['Time']
+                        },
+                        y: {
+                            label: { // ADD
+                            text: '방향',
+                            position: 'outer-middle'
+                            }
+                        }
+                    }
+                });
             }
         });
     }
@@ -89,13 +202,7 @@ $(function() {
                     var Data = JSON.parse(data['data']);
                     let section = Data['route']['trafast'][0]['section'];
                     let guide = Data['route']['trafast'][0]['guide'];
-
-
-                    console.log(section);
-                    console.log(guide);
-                    analysis(Data, startDate);
-                    console.log(Data['route']['trafast'][0]['path']);
-
+                    analysis(section[0]['name'], section[1]['name'], section[2]['name']);
                 }
             });
 //        },5000);
