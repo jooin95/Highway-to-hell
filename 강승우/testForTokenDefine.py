@@ -41,14 +41,14 @@ try:
 	for row in places:
 		if CurID == "" :
 			CurID = row[0]
-			CurCom = abs(lng + lat - row[1] - row[2])
+			CurCom = abs((lng + lat - row[1] - row[2])**2)
 		else:
 			newID = row[0]
-			newCom = abs(lng + lat - row[1] - row[2])
+			newCom = abs((lng + lat - row[1] - row[2])**2)
 			if newCom < CurCom :
 				CurCom = newCom
 				CurID = newID
-
+	print(CurCom)
 	way = CurID.split('h')
 	sql = "select * from highways where ID = '" + way[0] + "';"
 	cursor.execute(sql)
