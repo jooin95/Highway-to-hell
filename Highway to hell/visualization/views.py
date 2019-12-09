@@ -12,7 +12,7 @@ import time
 from django.db import connection
 import pymysql
 from traceback import format_exc
-#from collections import OrderedDict
+from collections import OrderedDict
 
 myNaverKey1 = "x2i0xjwran"
 myNaverKey2 = "ced9h4Hk4cUKJmCqa2QcUV3Ows7I0byrLEogtWdr"
@@ -98,17 +98,17 @@ def test_visualize(request):
     data = f.read().strip()
     f.close()
     # data = json.dumps(data, cls=DjangoJSONEncoder)
+	print(data)
     return JsonResponse({"data": data})
 
 
 @csrf_exempt
 def test_analysis(request):
     a = 0
-    print(request.POST)
     data1 = request.POST["data1"]
     data2 = request.POST["data2"]
     data3 = request.POST["data3"]
-    guide = request.POST["guide"]
+    gui = request.POST["gui"]
 
     distance_time = request.POST["distance_time"]
     type = request.POST.get('guide1','')
@@ -163,10 +163,13 @@ def test_analysis(request):
     print(select)
     final = select
     final = json.dumps(final, cls=DjangoJSONEncoder, ensure_ascii=False)
-    #expected_time = get_expectedTime(guide, duration_time, startDate)
+    expected_time = get_expectedTime(gui, duration_time, startDate)
     return JsonResponse({"select": select})
 
-#def get_expectedTime():
+def get_expectedTime(guide, duration_time, startDate):
+	
+	expected_time = 1
+	return expected_time
 	
 
 def get_token(token):
