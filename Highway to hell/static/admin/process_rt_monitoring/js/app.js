@@ -59,7 +59,6 @@ $(function() {
 
     }
     function analysis(data1, data2, data3, total, rate, gui){
-		var gui = JSON.stringify(gui);
         $.ajax({
             url: '/test/test_analysis/',
             method: 'POST',
@@ -238,7 +237,8 @@ $(function() {
                     }
                     distance_time += end_max;
 					var gui = guide;
-                    analysis(section[0]['name'], section[1]['name'], section[2]['name'], total_time, distance_time, gui);
+					var str = JSON.stringify(gui);
+                    analysis(section[0]['name'], section[1]['name'], section[2]['name'], total_time, distance_time, str);
                 }
             });
     }
