@@ -49,13 +49,14 @@ try:
 				CurCom = newCom
 				CurID = newID
 	print(CurCom)
+	str = way
 	way = CurID.split('h')
 	sql = "select * from highways where ID = '" + way[0] + "';"
 	cursor.execute(sql)
 	highway = cursor.fetchall()
 	maintoken = highway[0][2+int(way[1])]
 	
-	sql = "select * from place where ID ='"+way+"'"
+	sql = "select * from place where ID ='"+str+"'"
 	cursor.execute(sql)
 	places = cursor.fetchall()
 	CurLng = places[0][1]
