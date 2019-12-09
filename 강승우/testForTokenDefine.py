@@ -69,10 +69,9 @@ try:
 	tokens = []
 	
 	for row in places:
-		if row[1] == cur:
-			hightoken = (row[0].split('h'))[0]
-			ways.append(hightoken)
-			tokens.append("h"+hightoken[1])
+		hightoken = (row[0].split('h'))[0]
+		ways.append(hightoken)
+		tokens.append("h"+hightoken[1])
 	
 	print (maintoken)
 	print (tokens)
