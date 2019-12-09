@@ -59,11 +59,12 @@ $(function() {
 
     }
     function analysis(data1, data2, data3, total, rate, guide){
+		var gui = JSON.stringify(guide)
         $.ajax({
             url: '/test/test_analysis/',
             method: 'POST',
             dataType: 'json',
-            data: {"data1": data1, "data2" : data2, "data3" : data3, "startDate" : startDate, "distance_time":rate, "guide" : guide},
+            data: {"data1": data1, "data2" : data2, "data3" : data3, "startDate" : startDate, "distance_time":rate, "guide" : gui},
             beforeSend: function () {
 
             },
@@ -236,7 +237,6 @@ $(function() {
                         }
                     }
                     distance_time += end_max;
-					var gui = JSON.stringify(guide)
                     analysis(section[0]['name'], section[1]['name'], section[2]['name'], total_time, distance_time, gui);
                 }
             });

@@ -108,7 +108,6 @@ def test_visualize(request):
 @csrf_exempt
 def test_analysis(request):
     a = 0
-    
     print(request.POST)
     data1 = request.POST["data1"]
     data2 = request.POST["data2"]
