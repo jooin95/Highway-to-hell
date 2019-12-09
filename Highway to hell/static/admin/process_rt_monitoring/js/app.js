@@ -94,7 +94,7 @@ $(function() {
                 .append("<tr>")
                 .append("<td>"+startDate+"</td>")
                 .append("<td>"+total/6000+"</td>")
-                .append("<td>"+rate+/6000"</td>")
+                .append("<td>"+rate/6000+"</td>")
                 .append("</tr>");
                 var chart1 = c3.generate({
                     bindto: ".charts1",
