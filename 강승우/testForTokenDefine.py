@@ -31,8 +31,8 @@ try:
 	data1 = f.read().strip()
 	f.close()
 	data = json.loads(data1)
-	lng = data['places'][0]['x']
-	lat = data['places'][0]['y']
+	lng = float(data['places'][0]['x'])
+	lat = float(data['places'][0]['y'])
 	
 	CurID = ""
 	newID = ""
