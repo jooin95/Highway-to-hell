@@ -87,10 +87,6 @@ def test_visualize(request):
     place1Y = request.POST['place1Y']
     place2X = request.POST['place2X']
     place2Y = request.POST['place2Y']
-
-
-
-
     cmd = ['curl',
            'https://naveropenapi.apigw.ntruss.com/map-direction/v1/driving?start='
            + place1X + ',' + place1Y + '&goal=' + place2X + ',' + place2Y +
