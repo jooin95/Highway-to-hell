@@ -71,7 +71,7 @@ try:
 	for row in places:
 		hightoken = (row[0].split('h'))[0]
 		ways.append(hightoken)
-		tokens.append("h"+hightoken[1])
+		tokens.append("h"+(row[0].split('h'))[1])
 	
 	print (maintoken)
 	print (tokens)
@@ -80,8 +80,8 @@ try:
 	for row in tokens:
 		Jways += "'"+row+"',"
 	Jways.rstrip(",")
-	Jways+="]}"
-	Jways += "],'highways' : ["
+	Jways+="],"
+	Jways += "'highways' : ["
 	for row in ways:
 		Jways += "'"+row+"',"
 	Jways.rstrip(",")
