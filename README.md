@@ -7,7 +7,10 @@ url: 34.232.249.58:8000 (elastic public IP)
 Main Folder : ./Highway to hell
 
 TO RUN SERVER : go into dir ./Highway to hell
-				python3 manage.py runserver 0.0.0.0:8000
+				
+				
+				$python3 manage.py runserver 0.0.0.0:8000
+				
 				
 Introduction
 
