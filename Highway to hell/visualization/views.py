@@ -12,7 +12,6 @@ import time
 from django.db import connection
 import pymysql
 from traceback import format_exc
-from collections import OrderedDict
 
 myNaverKey1 = "x2i0xjwran"
 myNaverKey2 = "ced9h4Hk4cUKJmCqa2QcUV3Ows7I0byrLEogtWdr"
@@ -107,9 +106,7 @@ def test_analysis(request):
     data1 = request.POST["data1"]
     data2 = request.POST["data2"]
     data3 = request.POST["data3"]
-    gui = request.POST["gui"]
-
-    distance_time = request.POST["distance_time"]
+	
     type = request.POST.get('guide1','')
     duration = request.POST.get('guide2','')
     print(type)
@@ -162,5 +159,10 @@ def test_analysis(request):
     print(select)
     final = select
     final = json.dumps(final, cls=DjangoJSONEncoder, ensure_ascii=False)
+<<<<<<< HEAD
     expected_time = get_expectedTime(gui, distance_time, startDate)
     return JsonResponse({"select": select})
+=======
+    return JsonResponse({"select": select})
+
+>>>>>>> bf37012295a595c1ed7d27260492c55618f36bea
