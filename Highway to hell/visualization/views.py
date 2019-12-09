@@ -12,7 +12,7 @@ import time
 from django.db import connection
 import pymysql
 from traceback import format_exc
-from collections import OrderedDict
+#from collections import OrderedDict
 
 myNaverKey1 = "x2i0xjwran"
 myNaverKey2 = "ced9h4Hk4cUKJmCqa2QcUV3Ows7I0byrLEogtWdr"
