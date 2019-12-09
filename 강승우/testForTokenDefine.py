@@ -7,6 +7,7 @@ import json
 from django.core.serializers.json import DjangoJSONEncoder
 from urllib import parse
 import subprocess
+from collections import OrderedDict
 
 db = pymysql.connect("localhost","root","1234","highwaytohell",charset="utf8")
 myNaverKey1 = "x2i0xjwran"
@@ -14,7 +15,7 @@ myNaverKey2 = "ced9h4Hk4cUKJmCqa2QcUV3Ows7I0byrLEogtWdr"
 
 
 try:
-	token = '수원신갈IC'
+	token = '청주분기점'
 	cursor = db.cursor()
 
 	sql = "select * from place"
@@ -53,10 +54,35 @@ try:
 	sql = "select * from highways where ID = '" + way[0] + "';"
 	cursor.execute(sql)
 	highway = cursor.fetchall()
-	print (highway[0][1])
-	print (highway[0][2+int(way[1])])
+	maintoken = highway[0][2+int(way[1])]
 	
+	sql = "select * from place where ID ='"+CurID+"'"
+	cursor.execute(sql)
+	places = cursor.fetchall()
+	CurLng = places[0][1]
+	CurLat = places[0][2]
 	
+	sql = "select * from place where lng = "+ format(CurLng,'12.8f') + " and lat = " + format(CurLat,'12.8f') + ";" 
+	cursor.execute(sql)
+	places = cursor.fetchall()
+	
+	ways = []
+	tokens = []
+	
+	for row in places:
+		hightoken = (row[0].split('h'))[0]
+		ways.append(hightoken)
+		tokens.append("h"+(row[0].split('h'))[1])
+	
+	print (maintoken)
+	print (tokens)
+	print (ways)
+	rec = OrderedDict()
+	rec["tokens"] = tokens
+	rec["ways"] = ways
+	rt = json.dumps(rec, ensure_ascii=False, indent="\t")
+	dat = json.loads(rt)
+	print (dat)
 except IndexError:
 	print(format_exc())
 
