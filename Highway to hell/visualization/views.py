@@ -121,6 +121,7 @@ def test_analysis(request):
     after = datetime.strptime(startDate, '%Y-%m-%d %H:%M:%S') + timedelta(hours=3)
     after = after.time()
     data = [data1, data2, data3]
+    print(data)
     select = []
     for d in data:
         cursor = connection.cursor()
