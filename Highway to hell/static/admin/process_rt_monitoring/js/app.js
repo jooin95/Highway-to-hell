@@ -63,7 +63,7 @@ $(function() {
             url: '/test/test_analysis/',
             method: 'POST',
             dataType: 'json',
-            data: {"data1": data1, "data2" : data2, "data3" : data3, "startDate" : startDate },
+            data: {"data1": data1, "data2" : data2, "data3" : data3, "startDate" : startDate},
             beforeSend: function () {
 
             },
