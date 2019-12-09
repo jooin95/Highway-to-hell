@@ -111,6 +111,7 @@ def test_analysis(request):
     data2 = request.POST["data2"]
     data3 = request.POST["data3"]
     guide = request.POST["guide"]
+	print(guide)
     distance_time = request.POST["distance_time"]
     type = request.POST.get('guide1','')
     duration = request.POST.get('guide2','')
