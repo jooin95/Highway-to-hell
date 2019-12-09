@@ -9,10 +9,18 @@ Main Folder : ./Highway to hell
 TO RUN SERVER : go into dir ./Highway to hell
 				python3 manage.py runserver 0.0.0.0:8000
 				
-Introduction : This program is for expecting car travel time in the future.
-			   Select start time you want to travel and this website will expect time based on crawled informations
-			   This program crawl data of all real-time highway traffic informations in frequency of 10min
-			   This program use Naver Map API for getting direction.
+Introduction
+
+This program is for expecting car travel time in the future.
+
+Select start time you want to travel and this website will expect time based on crawled informations
+
+
+This program crawl data of all real-time highway traffic informations in frequency of 10min
+
+This program use Naver Map API for getting direction.
+
+
 
 Crawling : aws ubuntu mysql python(beautifulsoup)
 
