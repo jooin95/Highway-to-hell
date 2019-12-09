@@ -58,7 +58,7 @@ $(function() {
         $('#current_time').html(moment().format('YYYY년 MM월 DD일 HH시 mm분 ss초'));
 
     }
-    function analysis(data1, data2, data3){
+    function analysis(data1, data2, data3, total, rate){
         $.ajax({
             url: '/test/test_analysis/',
             method: 'POST',
@@ -86,19 +86,17 @@ $(function() {
                 .append(name2);
                 $('.n3')
                 .append(name3);
-                console.log(data);
-//                if(section1){
-//                    for(i = 0 ; i<section1.length; i++)
-//                    {
-//                        $('.table_body1')
-//                        .append("<tr>")
-//                        .append("<td> "+section1[i].Date+" "+section1[i].Time+" </td>")
-//                        .append("<td> "+section1[i].sum1+" </td>")
-//                        .append("<td> "+section1[i].sum2+" </td>")
-//                        .append("<tr> ");
-//                        .append("<tr> ");
-//                    }
-//                }
+                console.log(total);
+                console.log(rate);
+                console.log(JSON.stringify(startDate));
+                var fdate = (startDate.getTime() + total) / 1000;
+                $('.an_ta')
+                .append("<tr>")
+                .append("<td>"+startDate+"</td>")
+                .append("<td>"+fdate+"</td>")
+                .append("<td>"+rate+"</td>")
+                .append("</tr>");
+                console.log(section1);
                 var chart1 = c3.generate({
                     bindto: ".charts1",
                     size: {
@@ -190,7 +188,6 @@ $(function() {
         });
     }
     function realize(P1x, P2x, P3x, P4x){
-//        playAlert = setInterval(function () {
             $.ajax({
                 url: '/test/test_visualize/',
                 method: 'POST',
@@ -202,10 +199,47 @@ $(function() {
                     var Data = JSON.parse(data['data']);
                     let section = Data['route']['trafast'][0]['section'];
                     let guide = Data['route']['trafast'][0]['guide'];
-                    analysis(section[0]['name'], section[1]['name'], section[2]['name']);
+                    var distance_time = 0;
+                    check_point = new Array;
+                    var check_count = 0 ;
+                    var count = 0;
+                    var total_time = 0;
+                    for(i=0; i < guide.length; i++)
+                    {
+                        total_time = total_time + guide[i]['duration'];
+                        if(guide[i]['type'] == 47 || guide[i]['type'] == 50 || guide[i]['type'] == 51
+                           || guide[i]['type'] == 57 || guide[i]['type'] == 58 || guide[i]['type'] == 66 ||
+                            guide[i]['type'] == 67 || guide[i]['type'] == 121 || guide[i]['type'] == 122 ||
+                            guide[i]['type'] == 123){
+                            check_point.push(1);
+                            count++;
+                        }else{
+                            check_point.push(0);
+                        }
+                    }
+                    total_time = total_time;
+                    var start_max = 0;
+                    var end_max = 0;
+                    for(i=0; i< guide.length; i++){
+                        if (check_point[i] == 1){
+                            check_count += 1;
+                            if (check_count == 1){
+                                distance_time += start_max;
+                            }
+                        }else{
+                            if(check_count != count){
+                                start_max += guide[i]["duration"];
+
+                            }
+                            else{
+                                end_max += guide[i]["duration"];
+                            }
+                        }
+                    }
+                    distance_time += end_max;
+                    analysis(section[0]['name'], section[1]['name'], section[2]['name'], total_time, distance_time);
                 }
             });
-//        },5000);
     }
     setInterval(update, 1000);
     $('#startDate').datetimepicker({
@@ -232,8 +266,7 @@ $(function() {
                 var place2X = Data2['places'][0]['x'];
                 var place2Y = Data2['places'][0]['y'];
                 startDate = data['startDate'];
-                realize(place1X, place1Y, place2X, place2Y)
-
+                realize(place1X, place1Y, place2X, place2Y);
             }
         });
     });

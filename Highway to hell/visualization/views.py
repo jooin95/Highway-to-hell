@@ -87,6 +87,10 @@ def test_visualize(request):
     place1Y = request.POST['place1Y']
     place2X = request.POST['place2X']
     place2Y = request.POST['place2Y']
+
+
+
+
     cmd = ['curl',
            'https://naveropenapi.apigw.ntruss.com/map-direction/v1/driving?start='
            + place1X + ',' + place1Y + '&goal=' + place2X + ',' + place2Y +
@@ -106,14 +110,15 @@ def test_analysis(request):
     data1 = request.POST["data1"]
     data2 = request.POST["data2"]
     data3 = request.POST["data3"]
+    type = request.POST.get('guide1','')
+    duration = request.POST.get('guide2','')
+    print(type)
     startDate = request.POST["startDate"]
     Date = datetime.strptime(startDate, '%Y-%m-%d %H:%M:%S').date()
     Time = datetime.strptime(startDate, '%Y-%m-%d %H:%M:%S').time()
     before = Date - timedelta(3)
     after = datetime.strptime(startDate, '%Y-%m-%d %H:%M:%S') + timedelta(hours=3)
-    print(after)
     after = after.time()
-    print(after)
     data = [data1, data2, data3]
     select = []
     for d in data:
@@ -123,26 +128,28 @@ def test_analysis(request):
         cursor.execute(query_string, d)
         row = cursor.fetchall()
         collect = []
-        string = "select * from " + row[0][0] + " where date >= %s AND time >= %s AND time <= %s;"
-        cur.execute(string, (before, Time, after))
-        rs = cur.fetchall()
-        b = 0
-        for r in rs:
-            sum1 = 0
-            sum2 = 0
-            for i in range(2, row[0][1] + 1):
-                sum1 = sum1 + r[i]
-            for i in range(row[0][1] + 2, 2 * (row[0][1] - 1) + 2):
-                sum2 = sum2 + r[i]
-            dic = {
-                'index': b,
-                'Date': r[0],
-                'Time': r[1],
-                '정방향': sum1,
-                '역방향': sum2
-            }
-            b = b + 1
-            collect.append(dic)
+        print(row)
+        if(row):
+            string = "select * from " + row[0][0] + " where date >= %s AND time >= %s AND time <= %s;"
+            cur.execute(string, (before, Time, after))
+            rs = cur.fetchall()
+            b = 0
+            for r in rs:
+                sum1 = 0
+                sum2 = 0
+                for i in range(2, row[0][1] + 1):
+                    sum1 = sum1 + r[i]
+                for i in range(row[0][1] + 2, 2 * (row[0][1] - 1) + 2):
+                    sum2 = sum2 + r[i]
+                dic = {
+                    'index': b,
+                    'Date': r[0],
+                    'Time': r[1],
+                    '정방향': sum1,
+                    '역방향': sum2
+                }
+                b = b + 1
+                collect.append(dic)
         dict = {
             'name': data[a],
             'TfD': collect

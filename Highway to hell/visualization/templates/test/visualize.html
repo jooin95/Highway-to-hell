@@ -27,29 +27,6 @@
             </form>
         </div>
         <p id="data" data="{{data_list}}"></p>
-        <script src="{% static 'js/jquery-3.4.0.min.js' %}"></script>
-        <script>
-            data = form.find("#data").attr('data');
-            var Data1 = JSON.parse(data['data1']);
-            var Data2 = JSON.parse(data['data2']);
-            var place1X = Data1['places'][0]['x'];
-            var place1Y = Data1['places'][0]['y'];
-            var place2X = Data2['places'][0]['x'];
-            var place2Y = Data2['places'][0]['y'];
-            var startDate = data['startDate'];
-            playAlert = setInterval(function () {
-                $.ajax({
-                url: '/vis/test_visualize/',
-                method: 'POST',
-                dataType: 'json',
-                data: {"place1X":place1X, "place1Y":place1Y, "place2X":place2X, "place2Y":place2Y, "startDate":startDate},
-                beforeSend: function () {
-                },
-                success: function (data) {
-                    console.log(data);
-                }
-            },5000);
-        </script>
         <div class="charts"></div>
     </div>
 </section>}
