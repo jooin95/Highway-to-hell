@@ -17,7 +17,6 @@ from collections import OrderedDict
 myNaverKey1 = "x2i0xjwran"
 myNaverKey2 = "ced9h4Hk4cUKJmCqa2QcUV3Ows7I0byrLEogtWdr"
 
-
 def checkuser(request):
     if request.method == 'POST':
         startDate = request.POST['startDate']
@@ -89,9 +88,6 @@ def test_visualize(request):
     place2X = request.POST['place2X']
     place2Y = request.POST['place2Y']
 
-
-
-
     cmd = ['curl',
            'https://naveropenapi.apigw.ntruss.com/map-direction/v1/driving?start='
            + place1X + ',' + place1Y + '&goal=' + place2X + ',' + place2Y +
@@ -154,11 +150,12 @@ def test_analysis(request):
                     '역방향': sum2
                 }
                 b = b + 1
-                collect.append(dic)
+
         dict = {
             'name': data[a],
             'TfD': collect
         }
+		collect.append(dic)
         select.append(dict)
         print(dict)
         a = a + 1
@@ -172,9 +169,6 @@ def test_analysis(request):
 
 def get_token(token):
 	db = pymysql.connect("localhost","root","1234","highwaytohell",charset="utf8")
-	myNaverKey1 = "x2i0xjwran"
-	myNaverKey2 = "ced9h4Hk4cUKJmCqa2QcUV3Ows7I0byrLEogtWdr"
-
 
 	try:
 		cursor = db.cursor()
