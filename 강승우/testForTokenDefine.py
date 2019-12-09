@@ -14,7 +14,7 @@ myNaverKey2 = "ced9h4Hk4cUKJmCqa2QcUV3Ows7I0byrLEogtWdr"
 
 
 try:
-	token = '수원신갈IC'
+	token = '청주분기점'
 	cursor = db.cursor()
 
 	sql = "select * from place"
@@ -53,10 +53,28 @@ try:
 	sql = "select * from highways where ID = '" + way[0] + "';"
 	cursor.execute(sql)
 	highway = cursor.fetchall()
-	print (highway[0][1])
-	print (highway[0][2+int(way[1])])
+	maintoken = highway[0][2+int(way[1])]
 	
+	sql = "select * from place"
+	cursor.execute(sql)
+	places = cursor.fetchall()
 	
+	ways = []
+	
+	for row in places:
+		if row[1] == maintoken:
+			hightoken = row[0].split('h')[0]
+			ways.append(row[0])
+	
+	print (maintoken)
+	print (ways)
+	Jways = "{ 'token' : '"+maintoken+"','highways' : ["
+	for row in ways:
+		Jways += "'"+row+"',"
+	Jways.rstrip("'")
+	Jways+="]}"
+	print (Jways)
+	rec = json.loads(Jways)
 except IndexError:
 	print(format_exc())
 
