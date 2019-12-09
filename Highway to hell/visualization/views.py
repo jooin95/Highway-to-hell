@@ -155,7 +155,7 @@ def test_analysis(request):
             'name': data[a],
             'TfD': collect
         }
-		collect.append(dic)
+        collect.append(dic)
         select.append(dict)
         print(dict)
         a = a + 1
