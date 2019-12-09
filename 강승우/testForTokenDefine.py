@@ -79,12 +79,12 @@ try:
 	Jways = "{ 'token' : ["
 	for row in tokens:
 		Jways += "'"+row+"',"
-	Jways.lstrip(',')
+	Jways.rstrip(",")
 	Jways+="],"
 	Jways += "'highways' : ["
 	for row in ways:
 		Jways += "'"+row+"',"
-	Jways.lstrip(',')
+	Jways.rstrip(",")
 	Jways+="]}"
 	print (Jways)
 	rec = json.loads(Jways)
