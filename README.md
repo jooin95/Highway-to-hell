@@ -147,39 +147,39 @@ DOWNLOAD mysql, python3, beautifulsoup4, Django2.1
 
 for libs in python, run this codes
 
-$sudo apt install libpq-dev python-dev
+	$sudo apt install libpq-dev python-dev
 
-$pip3 install django==2.1
+	$pip3 install django==2.1
 
-$pip3 install django-cors-headers
+	$pip3 install django-cors-headers
 
-$pip3 install django==2.1
+	$pip3 install django==2.1
 
-$pip3 install djongo
+	$pip3 install djongo
 
-$pip3 install django==2.1
+	$pip3 install django==2.1
 
-$pip3 install jsonfield
+	$pip3 install jsonfield
 
-$pip3 install django==2.1
+	$pip3 install django==2.1
 
-$pip3 install psycopg2
+	$pip3 install psycopg2
 
-$pip3 install django==2.1
+	$pip3 install django==2.1
 
-$pip3 install gensim
+	$pip3 install gensim
 
-$pip3 install konlpy
+	$pip3 install konlpy
 
-$pip3 install spacy
+	$pip3 install spacy
 
-$pip3 install pandas
+	$pip3 install pandas
 
-$pip3 install sklearn
+	$pip3 install sklearn
 
-$pip3 install nltk
+	$pip3 install nltk
 
-$pip3 install pyLDAvis
+	$pip3 install pyLDAvis
 
 if there are more libs needed, follow additional error codes
 
@@ -187,7 +187,7 @@ if there are more libs needed, follow additional error codes
 
 Database BuildUp
 
-$mysql -uroot -p
+	$mysql -uroot -p
 
 set password as 1234
 
@@ -198,21 +198,21 @@ Crawling
 run ./강승우/CrawlAndInsert.py by using command below
 
 
-$python3 CrawlAndInsert.py
+	$python3 CrawlAndInsert.py
 
 
 If you need to run it after exiting session, 
 write command 
 
 
-$screen -S session_name    >>>> session_name that you want
+	$screen -S session_name    >>>> session_name that you want
 
 and run that command
 When you want to get out of that session, Ctrl + a + d
 Get into that session again by using command below when you need
 
 
-$screen -r session_name
+	$screen -r session_name
 
 
 Refer to this page http://blog.naver.com/PostView.nhn?blogId=hyungjungkim&logNo=221329251023&categoryNo=43&parentCategoryNo=0
