@@ -98,7 +98,7 @@ def test_visualize(request):
     data = f.read().strip()
     f.close()
     # data = json.dumps(data, cls=DjangoJSONEncoder)
-	print(data)
+    print(data)
     return JsonResponse({"data": data})
 
 
