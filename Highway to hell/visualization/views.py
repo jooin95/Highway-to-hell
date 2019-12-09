@@ -110,8 +110,8 @@ def test_analysis(request):
     data1 = request.POST["data1"]
     data2 = request.POST["data2"]
     data3 = request.POST["data3"]
-	guide = request.POST["guide"]
-	distance_time = request.POST["distance_time"]
+    guide = request.POST["guide"]
+    distance_time = request.POST["distance_time"]
     type = request.POST.get('guide1','')
     duration = request.POST.get('guide2','')
     print(type)
@@ -160,7 +160,7 @@ def test_analysis(request):
         a = a + 1
     final = select
     final = json.dumps(final, cls=DjangoJSONEncoder, ensure_ascii=False)
-	#expected_time = get_expectedTime(guide, duration_time, startDate)
+    #expected_time = get_expectedTime(guide, duration_time, startDate)
     return JsonResponse({"select": select})
 
 #def get_expectedTime():
