@@ -89,11 +89,10 @@ $(function() {
                 console.log(total);
                 console.log(rate);
                 console.log(JSON.stringify(startDate));
-                var fdate = (startDate.getTime() + total) / 1000;
                 $('.an_ta')
                 .append("<tr>")
                 .append("<td>"+startDate+"</td>")
-                .append("<td>"+fdate+"</td>")
+                .append("<td>"+total+"</td>")
                 .append("<td>"+rate+"</td>")
                 .append("</tr>");
                 console.log(section1);

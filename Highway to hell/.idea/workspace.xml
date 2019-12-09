@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a862af6d-3663-4a24-b734-f11286ff869d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/templates/test/analysis1.html" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/templates/test/analysis1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/templates/test/analysis2.html" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/templates/test/analysis2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/templates/test/checkuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/templates/test/checkuser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/templates/test/visualize.html" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/templates/test/visualize.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualization/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +18,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="450">
-                    <caret line="90" column="52" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
+                  <state relative-caret-position="465">
+                    <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
                   </state>
                 </provider>
               </entry>
@@ -704,8 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/admin/process_rt_monitoring/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="90" column="52" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
+        <state relative-caret-position="465">
+          <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
         </state>
       </provider>
     </entry>
