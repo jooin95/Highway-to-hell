@@ -55,23 +55,37 @@ try:
 	highway = cursor.fetchall()
 	maintoken = highway[0][2+int(way[1])]
 	
-	sql = "select * from place"
+	sql = "select * from place where ID ='"+way+"'"
+	cursor.execute(sql)
+	places = cursor.fetchall()
+	CurLng = places[0][1]
+	CurLat = places[0][2]
+	
+	sql = "select * from place where lng = '"+ CurLng + "' and lat = '" + CurLat + "';" 
 	cursor.execute(sql)
 	places = cursor.fetchall()
 	
 	ways = []
+	tokens = []
 	
 	for row in places:
-		if row[1] == maintoken:
+		if row[1] == cur:
 			hightoken = (row[0].split('h'))[0]
 			ways.append(hightoken)
+			tokens.append("h"+hightoken[1])
 	
 	print (maintoken)
+	print (tokens)
 	print (ways)
-	Jways = "{ 'token' : '"+maintoken+"','highways' : ["
+	Jways = "{ 'token' : ["
+	for row in tokens:
+		Jways += "'"+row+"',"
+	Jways.rstrip(",")
+	Jways+="]}"
+	Jways += "],'highways' : ["
 	for row in ways:
 		Jways += "'"+row+"',"
-	Jways.rstrip("'")
+	Jways.rstrip(",")
 	Jways+="]}"
 	print (Jways)
 	rec = json.loads(Jways)
