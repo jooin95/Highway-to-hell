@@ -61,7 +61,7 @@ try:
 	CurLng = places[0][1]
 	CurLat = places[0][2]
 	
-	sql = "select * from place where lng = '"+ CurLng + "' and lat = '" + CurLat + "';" 
+	sql = "select * from place where lng = "+ format(CurLng,'12.8f') + " and lat = " + format(CurLat,'12.8f') + ";" 
 	cursor.execute(sql)
 	places = cursor.fetchall()
 	
