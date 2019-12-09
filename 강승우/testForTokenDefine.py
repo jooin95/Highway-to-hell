@@ -53,8 +53,8 @@ try:
 	sql = "select * from highways where ID = '" + way[0] + "';"
 	cursor.execute(sql)
 	highway = cursor.fetchall()
-	print (highway[1])
-	print (highway[2+int(way[1])])
+	print (highway[0][1])
+	print (highway[0][2+int(way[1])])
 	
 	
 except IndexError:
