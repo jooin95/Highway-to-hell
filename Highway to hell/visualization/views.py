@@ -158,8 +158,9 @@ def test_analysis(request):
             'TfD': collect
         }
         select.append(dict)
-        print(dict)
+
         a = a + 1
+    print(select)
     final = select
     final = json.dumps(final, cls=DjangoJSONEncoder, ensure_ascii=False)
     #expected_time = get_expectedTime(guide, duration_time, startDate)
