@@ -59,11 +59,12 @@ $(function() {
 
     }
     function analysis(data1, data2, data3, total, rate, guide){
+		var gui = JSON.stringify(guide)
         $.ajax({
             url: '/test/test_analysis/',
             method: 'POST',
             dataType: 'json',
-            data: {"data1": data1, "data2" : data2, "data3" : data3, "startDate" : startDate, "duration_time":rate,"guide" : guide},
+            data: {"data1": data1, "data2" : data2, "data3" : data3, "startDate" : startDate, "distance_time":rate,"guide" : gui},
             beforeSend: function () {
 
             },
