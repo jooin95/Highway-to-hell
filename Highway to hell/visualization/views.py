@@ -163,10 +163,10 @@ def test_analysis(request):
     print(select)
     final = select
     final = json.dumps(final, cls=DjangoJSONEncoder, ensure_ascii=False)
-    expected_time = get_expectedTime(gui, duration_time, startDate)
+    expected_time = get_expectedTime(gui, distance_time, startDate)
     return JsonResponse({"select": select})
 
-def get_expectedTime(guide, duration_time, startDate):
+def get_expectedTime(guide, distance_time, startDate):
 	
 	expected_time = 1
 	return expected_time
