@@ -1,4 +1,3 @@
-
 let selectedVariables = [];
 let selectedLine = {};
 let selectedMachine = {};
@@ -21,15 +20,12 @@ $(function() {
             var $charts = $graphArea.find('.charts');
             var $alert2 = $('#formTest').find('.alert-warning');
             var $alertMessage = $alert2.find('.message');
-
             $('#formTest').on('submit', function(e) {
             e.preventDefault();
             const form = $(this);
             const url = form.attr('action');
-
             const drStart = form.find('#drStart').val();
             const drEnd = form.find('#drEnd').val();
-
                 if (!waitingAjax) {
                     $.ajax({
                         url: url,
@@ -74,7 +70,6 @@ $(function() {
 //                Data = Data.replace(/\]/gi, "");
                 Data = Data.replace(/\ /gi, "");
                 Data = JSON.parse(Data);
-                console.log(Data);
                 let section1 = Data['select'][0]['TfD'];
                 var name1 = Data['select'][0]['name'];
                 let section2 = Data['select'][1]['TfD'];
@@ -90,12 +85,16 @@ $(function() {
                 console.log(total);
                 console.log(rate);
                 console.log(JSON.stringify(startDate));
+                var tDate = new Date(startDate);
+                tDate.setMinutes(tDate.getMinutes() + total/6000);
+                var s_D = new Date(startDate);
                 $('.an_ta')
                 .append("<tr>")
-                .append("<td>"+startDate+"</td>")
-                .append("<td>"+total/6000+"</td>")
+                .append("<td>"+s_D+"</td>")
+                .append("<td>"+tDate+"</td>")
                 .append("<td>"+rate/6000+"</td>")
                 .append("</tr>");
+                console.log(section1);
                 var chart1 = c3.generate({
                     bindto: ".charts1",
                     size: {
@@ -228,7 +227,6 @@ $(function() {
                         }else{
                             if(check_count != count){
                                 start_max += guide[i]["duration"];
-
                             }
                             else{
                                 end_max += guide[i]["duration"];
@@ -243,7 +241,7 @@ $(function() {
     setInterval(update, 1000);
     $('#startDate').datetimepicker({
         format: 'YYYY-MM-DD HH:mm:ss',
-        defaultDate: '2019-12-09 13:41:49'
+        defaultDate: moment()
     });
     $('#process').click(function(e) {
         var StartDate=$("#txtStartDate").val();

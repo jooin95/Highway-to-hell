@@ -12,8 +12,13 @@ import time
 from django.db import connection
 import pymysql
 from traceback import format_exc
+from collections import OrderedDict
+
 myNaverKey1 = "x2i0xjwran"
 myNaverKey2 = "ced9h4Hk4cUKJmCqa2QcUV3Ows7I0byrLEogtWdr"
+keyvalue_data = json
+
+
 def checkuser(request):
     if request.method == 'POST':
         startDate = request.POST['startDate']
@@ -44,8 +49,12 @@ def checkuser(request):
         return render(request, 'test/visualize.html', {"data1": data1, "data2": data2, "startDate": startDate})
     elif request.method == 'GET':
         return render(request, "test/checkuser.html")
+
+
 def visualize(request):
     return render(request, "test/visualize.html")
+
+
 @csrf_exempt
 def test_send(request):
     startDate = request.POST['StartDate']
@@ -72,6 +81,8 @@ def test_send(request):
     data2 = f.read().strip()
     f.close()
     return JsonResponse({"data1": data1, "data2": data2, "startDate": startDate})
+
+
 @csrf_exempt
 def test_visualize(request):
     place1X = request.POST['place1X']
@@ -87,17 +98,17 @@ def test_visualize(request):
     f = subprocess.Popen(cmd, stdout=subprocess.PIPE, encoding="utf-8").stdout
     data = f.read().strip()
     f.close()
+    keyvalue_data = data
     # data = json.dumps(data, cls=DjangoJSONEncoder)
     return JsonResponse({"data": data})
+
+
 @csrf_exempt
 def test_analysis(request):
     a = 0
     data1 = request.POST["data1"]
     data2 = request.POST["data2"]
     data3 = request.POST["data3"]
-    type = request.POST.get('guide1','')
-    duration = request.POST.get('guide2','')
-    print(type)
     startDate = request.POST["startDate"]
     Date = datetime.strptime(startDate, '%Y-%m-%d %H:%M:%S').date()
     Time = datetime.strptime(startDate, '%Y-%m-%d %H:%M:%S').time()
@@ -135,7 +146,6 @@ def test_analysis(request):
                 }
                 b = b + 1
                 collect.append(dic)
-        print(collect)
         dict = {
             'name': data[a],
             'TfD': collect
@@ -143,3 +153,6 @@ def test_analysis(request):
         select.append(dict)
         a = a + 1
     return JsonResponse({"select": select})
+
+
+
